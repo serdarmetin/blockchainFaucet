@@ -4,9 +4,7 @@
 pragma solidity ^0.5.13;
 pragma experimental ABIEncoderV2;
 
-import "./MinHeapOperationsNode.sol";
-
-contract Faucet is Heaped{
+contract Faucet{
 
     //State variables
     uint constant numberOfResources = 2;
