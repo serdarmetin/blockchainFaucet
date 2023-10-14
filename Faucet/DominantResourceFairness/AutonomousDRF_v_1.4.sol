@@ -1,9 +1,6 @@
 // DRF employing AMF
 
-
 pragma solidity ^0.5.13;
-pragma experimental ABIEncoderV2;
-
 
 contract Faucet{
 
