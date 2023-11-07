@@ -1,3 +1,5 @@
+// lines 88 - 94 might be written in a more concise way to save up from the storage read/write costs
+
 pragma solidity ^0.5.13;
 pragma experimental ABIEncoderV2;
 
@@ -87,6 +89,10 @@ contract Faucet is Heaped{
 	            if(numberOfDemands[i][selector] != 0)
         	        share[i] = capacity[i] / numberOfDemands[i][selector];
 		}
+
+	    for(uint i = 1; i < numberOfResources; i++)
+		if(share[i] < share[i + 1]) share[i + 1] = share[i];
+
         }
 
         //Epoch is up-to-date, so uupdate only the round: round also starts from 1 to prevent triggering "already claimed" in the first round
