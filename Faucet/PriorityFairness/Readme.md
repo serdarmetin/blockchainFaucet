@@ -1,0 +1,3 @@
+This is not a mathematically rigorous, strategy-proof algorithm. It is based on a rather socially constructed idea of fairness than mathematical; and put here for further logical development.
+
+According to this, the algorithm ranks demands of a user for multiple resources, for their priority, over each demand's percent ratio to the available resource for that given demand. In turn, the demands of all users are put to Max-min Fairness (MF) distribution lists for matching priorities. This results in demands for different resource types ending up in same distribution lists over their percent demands.
