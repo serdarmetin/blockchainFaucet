@@ -1,4 +1,4 @@
-﻿This is an initial implementation of an experimental blockchain faucet, managing multiple resource types in accordance with the Dominant Resource Fairness (DRF) distribution scheme.
+﻿ADRf 1.4 is an initial implementation of an experimental blockchain faucet, managing multiple resource types in accordance with the Dominant Resource Fairness (DRF) distribution scheme.
 
 The original DRF algorithm calculates the shares over normalised demand vectors for each user, assuming that the normalised demand vector corresponds to a unit task. DRF iterates over the list of demand vectors and allocates one task to the least allocated user, and then reiterates with the updated allocation statuses, until at least one resource is exhausted. Users do not submit their maximum demands for each resource, but the tuple to run a unit task, and the algorithm allocates as much resources it can for running as much tasks as possible.
 
