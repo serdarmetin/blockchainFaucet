@@ -2,7 +2,7 @@ Autonomous Dominant Resource Fairness is a blockchain implementation of Dominant
 
 Unlike version 1.4, ADRF 2.0 follows the exact demand structure of the original algorithm. The calculation of shares is based on Extended DRF of Parkes et al. (2015).
 
-The code is in the development phase, and the current version may only be an estimate for the gas cost of the functions. The algorithm is not yet correctly implemented, and for all practical reasons, it is fair to assume that the floating point arithmetics should be debugged before being ready to use.
+The code is in development phase, and the current version may only be a rough estimate for the gas cost of the functions. The algorithm is not yet correctly implemented, and for all practical reasons, it is fair to assume that the floating point arithmetics should be debugged before being ready to use.
 
 References:
 
