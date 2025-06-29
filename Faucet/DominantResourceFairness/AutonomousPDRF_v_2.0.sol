@@ -191,7 +191,7 @@ contract Faucet{
 	   if(user.saturated == epoch) return;
 
 // 	Calculate and assign the (partial) share
-	   uint ratio = (mds[selector][0] * p) / user.ds[selector][0];
+	   uint ratio = (mds[selector][round - 1] * p) / user.ds[selector][0];
 	   uint share;
 	
 	   for(uint i = 0; i < nore; i++){
@@ -250,10 +250,8 @@ contract Faucet{
 		return value;
 	}
 
-	function viewCumDemand(uint func) view public returns(uint[nore] memory) {
-		uint selector = (epoch + func) % 2;
-		uint[nore] memory value = crd[selector];
-		return value;
+	function viewCumDemand(uint e) view public returns(uint[nore] memory) {
+		return crd[e];
 	}
 
 	function viewDominantShare(uint _user, uint func) view public returns(uint) {
