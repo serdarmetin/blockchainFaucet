@@ -1,11 +1,11 @@
 // DRF employing AMF
-// This is the initial version of single round ADRF, 
+// This is the initial version of multi-round ADRF, 
 // which uses maximum dominant share variable in the
 // calculations, as defined in th paper. In the next
 // versions I used a nice cancellation which formerly
-// escaped my attention. Results are the same, except
-// one redundant factor multiplied and divided in the
-// middle of calculations.
+// escaped my attention. Results are the same. The updated
+// version saves a couple of multiplications and divisions.
+
 
 pragma solidity ^0.5.13;
 
