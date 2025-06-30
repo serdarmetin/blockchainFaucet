@@ -6,6 +6,7 @@
 // escaped my attention. Results are the same. The updated
 // version saves a couple of multiplications and divisions.
 
+
 pragma solidity ^0.5.13;
 
 contract Faucet{
