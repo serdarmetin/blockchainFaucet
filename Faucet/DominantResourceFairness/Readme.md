@@ -15,7 +15,11 @@ ADRF 2.1 takes a single round of distribution, and hands the leftover resources 
 
 ADRF 2.2 takes an additional round for allocating residual resources from the first round that comes about as a consequence of rounding difference between calculation with cumulative demands versus assignment over individual demands. Similarly, the excess resources are handed over to the epoch after the next.
 
-ADRF 2.2 is mainly for examplification and proof of concept purposes. The experiments we carried out showed that an additional round contributes only a slight improvement to approximate Pareto Efficiency, if any. But it is a prototype for any interested party to implement a version with more allocation rounds, for scenarios where initial distribution of demands is skewed or atypically disperse and the cost of additional rounds is reasonable with respect to the benefits. With some additional effort, iterative exclusion of maximum dominant shares can also be implemented for further approximating PDRF and thus, DRF. 
+ADRF 2.2 is mainly for examplification and proof of concept purposes. The experiments we carried out showed that an additional round contributes only a slight improvement to approximate Pareto Efficiency, if any. But it is a prototype for any interested party to implement a version with more allocation rounds, for scenarios where initial distribution of demands is skewed or atypically disperse and the cost of additional rounds is reasonable with respect to the benefits. With some additional effort, iterative exclusion of maximum dominant shares can also be implemented for further approximating PDRF and thus, DRF.
+
+In addition to the overall structure of AMF, which ADRF 2.2 is based on, we needed to include a new funtion, named "refreshDemand()", which the users are expected to execute in the second round to eliminate the saturated demands.
+
+One caveat is that due to the unavailability of floating point variables in Solidity, the precision of the calculation may falter at times, and it can be better calibrated than it is now. It occasionally differs in one or two task allocations than the python implementation, in the second round of claims.
 
 [1] Ghodsi, A., Zaharia, M., Hindman, B., Konwinski, A., Shenker, S., & Stoica, I. (2011). Dominant resource fairness: Fair allocation of multiple resource types. In 8th USENIX symposium on networked systems design and implementation (NSDI 11).
 
