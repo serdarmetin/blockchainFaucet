@@ -19,7 +19,7 @@ contract Faucet{
 	uint[nore][2] crd;
 	uint[2] nod;
 	uint nou;
-	uint epoch = 1;
+	uint e = 1;
 	uint resetEpoch;
 	
 	struct User{
@@ -88,10 +88,10 @@ contract Faucet{
 */
 
 	function updateState() private {
-//	Update epoch & round: epoch starts from 1 to prevent triggering "already d" in the first epoch
-		if(epoch < (block.number - offset) / es + 1){
-			epoch = (block.number - offset) / es + 1;
-			uint8 selector = uint8((epoch) % 2);
+//	Update e & round: e starts from 1 to prevent triggering "already d" in the first e
+		if(e < (block.number - offset) / es + 1){
+			e = (block.number - offset) / es + 1;
+			uint8 selector = uint8((e) % 2);
 			for(uint i = 0; i < nore; i++){
 				r[1 - selector][i] = er[1 - selector][i] + r[1 - selector][i];
 			}
@@ -111,9 +111,9 @@ contract Faucet{
 //	Regular checks and updates
 		updateState();
 		require(registered[msg.sender] != 0, "Your address has not been registered.");
-		uint8 selector = uint8((epoch + 1) % 2);
+		uint8 selector = uint8((e + 1) % 2);
 	    	User storage user = userList[registered[msg.sender]];
-		require(user.de[selector] < epoch, "You have already made a demand in this epoch.");
+		require(user.de[selector] < e, "You have already made a demand in this e.");
 
 // 	Register demand
 		for(uint i = 0; i < nore; i++){
@@ -132,17 +132,17 @@ contract Faucet{
 		user.ds[selector][0] = temp[0];
 		user.ds[selector][1] = temp[1];
 		
-//	Update user demand epoch
-		user.de[selector] = epoch;
+//	Update user demand e
+		user.de[selector] = e;
 	
 //	Systemwide updates
-		if(resetEpoch < epoch){
+		if(resetEpoch < e){
 //			nod[selector] = 1;
 			for(uint i = 0; i < nore; i++){
 				crd[selector][i] = _amount[i] * p / temp[0];
 			}
 			mds[selector] = temp[0];
-			resetEpoch = epoch;
+			resetEpoch = e;
 		}            
 	
 		else{
@@ -159,9 +159,9 @@ contract Faucet{
 //	Regular checks and updates
 	   updateState();
 	   require(registered[msg.sender] != 0, "Your address has not been registered.");
-	   uint8 selector = uint8(epoch % 2);
+	   uint8 selector = uint8(e % 2);
 	   User storage user = userList[registered[msg.sender]];
-	   if(user.saturated == epoch) return;
+	   if(user.saturated == e) return;
 
 // 	Caculate and assign the (partial) share
 	   uint ratio = (mds[selector] * p) / user.ds[selector][0];
@@ -191,7 +191,7 @@ contract Faucet{
 	} 
 
 	function viewDemand(uint _user) view public returns(uint[nore] memory) {
-		uint selector = (epoch + 1) % 2;
+		uint selector = (e + 1) % 2;
 		uint[nore] memory value = userList[_user].d[selector];
 		return value;
 	}
@@ -201,7 +201,7 @@ contract Faucet{
 	}
 
 	function viewDominantShare(uint _user, uint func) view public returns(uint) {
-		uint selector = (epoch + func) % 2;
+		uint selector = (e + func) % 2;
 		return userList[_user].ds[selector][0];
 	}
 
