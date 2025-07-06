@@ -8,14 +8,14 @@ contract Faucet{
 	uint constant nore = 2;
 	uint constant userQuota = 10;
 	uint es = userQuota * 2;
-	uint[nore][2] ec;
-	uint[nore][2] lc;
-	uint[nore][2] c;
+	uint[nore][2] er;
+	uint[nore][2] r;
 	uint p = 1000000;
 
 	address owner;
 	uint offset;
 	uint k;
+	uint[2] mds;
 	uint[nore][2] crd;
 	uint[2] nod;
 	uint nou;
@@ -41,10 +41,10 @@ contract Faucet{
 	    owner = msg.sender;
 	    offset = block.number + 1;
 	for(uint i = 0; i < nore; i++){
-		ec[0][i] = 1500;
-		ec[1][i] = 1500;
-		c[0][i] = 1500;
-		lc[0][i] = 1500;
+		er[0][i] = 150 * userQuota;
+		er[1][i] = 150 * userQuota;
+		r[0][i] = 150 * userQuota;
+		r[0][i] = 150 * userQuota;
 		}
 	}
 
@@ -53,7 +53,7 @@ contract Faucet{
 	    owner = msg.sender;
 	    offset = block.number + 1;
 	for(uint i = 0; i < nore; i++){
-		ec[i] = resourceCapacities[i];
+		er[i] = resourceCapacities[i];
 		}
 	}
 */
@@ -93,17 +93,16 @@ contract Faucet{
 			epoch = (block.number - offset) / es + 1;
 			uint8 selector = uint8((epoch) % 2);
 			for(uint i = 0; i < nore; i++){
-				c[1 - selector][i] = ec[1 - selector][i] + lc[1 - selector][i];
-				lc[1 - selector][i] = c[1 - selector][i];
+				r[1 - selector][i] = er[1 - selector][i] + r[1 - selector][i];
 			}
 	
-		k = (c[selector][0] * p * p) / crd[selector][0];
-		for(uint i = 0; i < nore; i++){
-			if(k > (c[selector][i] * p * p) / crd[selector][i])
-				k = (c[selector][i] * p * p)  / crd[selector][i];
-		}
+			k = (r[selector][0] * p * p) / (mds[selector] * crd[selector][0]);
+			for(uint i = 0; i < nore; i++){
+				if(k > (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]))
+					k = (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]);
+			}
 
-	}
+		}
 	
 	}	
 
@@ -142,12 +141,17 @@ contract Faucet{
 			for(uint i = 0; i < nore; i++){
 				crd[selector][i] = _amount[i] * p / temp[0];
 			}
+			mds[selector] = temp[0];
 			resetEpoch = epoch;
 		}            
 	
 		else{
-			for(uint i = 0; i < nore; i++)
+//			nod[selector]++;
+			for(uint i = 0; i < nore; i++){
 				crd[selector][i] += _amount[i] * p / temp[0];
+			}
+			if(mds[selector] < temp[0])
+				mds[selector] = temp[0];
 		}
 	}
 
@@ -159,23 +163,23 @@ contract Faucet{
 	   User storage user = userList[registered[msg.sender]];
 	   if(user.saturated == epoch) return;
 
-// 	Calculate and assign the (partial) share
-	   uint ratio = p / user.ds[selector][0];
+// 	Caculate and assign the (partial) share
+	   uint ratio = (mds[selector] * p) / user.ds[selector][0];
 	   uint share;
 	
 	   for(uint i = 0; i < nore; i++){
 		   share = ((k * ratio) / (p * p)) * user.d[selector][i];
 		   user.balance[i] += share;
-		   lc[selector][i] -= share;
+		   r[selector][i] -= share;
 	   }
 	}
 
 	function abs2percent(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * p)  / c[selector][resourceType];
+		return (value * p)  / r[selector][resourceType];
 	}
 
 	function percent2abs(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * c[selector][resourceType]) / p;
+		return (value * r[selector][resourceType]) / p;
 	} 
 
 	function viewBalance(uint _user) view public returns(uint[nore] memory) {
@@ -201,15 +205,16 @@ contract Faucet{
 		return userList[_user].ds[selector][0];
 	}
 
+	function viewMaxDominantShare(uint e) view public returns(uint) {
+		return mds[e];
+	}
+
 	function viewCapacity(uint e) view public returns(uint[nore] memory) {
-		return c[e];
+		return r[e];
 	}
 
         function viewNumberOfDemands(uint e) view public returns(uint) {
                 return nod[e];
         }
 
-	function viewLeftoverCapacity(uint e) view public returns(uint[nore] memory) {
-		return lc[e];
-	}
 }
