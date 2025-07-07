@@ -8,18 +8,18 @@ contract Faucet{
 	uint constant nore = 2;
 	uint constant userQuota = 10;
 	uint es = userQuota * 2;
-	uint[nore][2] er;
-	uint[nore][2] r;
+	uint[nore][2] ec;
+	uint[nore][2] lc;
+	uint[nore][2] c;
 	uint p = 1000000;
 
 	address owner;
 	uint offset;
 	uint k;
-	uint[2] mds;
 	uint[nore][2] crd;
 	uint[2] nod;
 	uint nou;
-	uint e = 1;
+	uint epoch = 1;
 	uint resetEpoch;
 	
 	struct User{
@@ -41,10 +41,10 @@ contract Faucet{
 	    owner = msg.sender;
 	    offset = block.number + 1;
 	for(uint i = 0; i < nore; i++){
-		er[0][i] = 150 * userQuota;
-		er[1][i] = 150 * userQuota;
-		r[0][i] = 150 * userQuota;
-		r[0][i] = 150 * userQuota;
+		ec[0][i] = 1500;
+		ec[1][i] = 1500;
+		c[0][i] = 1500;
+		lc[0][i] = 1500;
 		}
 	}
 
@@ -53,7 +53,7 @@ contract Faucet{
 	    owner = msg.sender;
 	    offset = block.number + 1;
 	for(uint i = 0; i < nore; i++){
-		er[i] = resourceCapacities[i];
+		ec[i] = resourceCapacities[i];
 		}
 	}
 */
@@ -88,21 +88,22 @@ contract Faucet{
 */
 
 	function updateState() private {
-//	Update e & round: e starts from 1 to prevent triggering "already d" in the first e
-		if(e < (block.number - offset) / es + 1){
-			e = (block.number - offset) / es + 1;
-			uint8 selector = uint8((e) % 2);
+//	Update epoch & round: epoch starts from 1 to prevent triggering "already d" in the first epoch
+		if(epoch < (block.number - offset) / es + 1){
+			epoch = (block.number - offset) / es + 1;
+			uint8 selector = uint8((epoch) % 2);
 			for(uint i = 0; i < nore; i++){
-				r[1 - selector][i] = er[1 - selector][i] + r[1 - selector][i];
+				c[1 - selector][i] = ec[1 - selector][i] + lc[1 - selector][i];
+				lc[1 - selector][i] = c[1 - selector][i];
 			}
 	
-			k = (r[selector][0] * p * p) / (mds[selector] * crd[selector][0]);
-			for(uint i = 0; i < nore; i++){
-				if(k > (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]))
-					k = (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]);
-			}
-
+		k = (c[selector][0] * p * p) / crd[selector][0];
+		for(uint i = 0; i < nore; i++){
+			if(k > (c[selector][i] * p * p) / crd[selector][i])
+				k = (c[selector][i] * p * p)  / crd[selector][i];
 		}
+
+	}
 	
 	}	
 
@@ -111,9 +112,9 @@ contract Faucet{
 //	Regular checks and updates
 		updateState();
 		require(registered[msg.sender] != 0, "Your address has not been registered.");
-		uint8 selector = uint8((e + 1) % 2);
+		uint8 selector = uint8((epoch + 1) % 2);
 	    	User storage user = userList[registered[msg.sender]];
-		require(user.de[selector] < e, "You have already made a demand in this e.");
+		require(user.de[selector] < epoch, "You have already made a demand in this epoch.");
 
 // 	Register demand
 		for(uint i = 0; i < nore; i++){
@@ -132,26 +133,21 @@ contract Faucet{
 		user.ds[selector][0] = temp[0];
 		user.ds[selector][1] = temp[1];
 		
-//	Update user demand e
-		user.de[selector] = e;
+//	Update user demand epoch
+		user.de[selector] = epoch;
 	
 //	Systemwide updates
-		if(resetEpoch < e){
+		if(resetEpoch < epoch){
 //			nod[selector] = 1;
 			for(uint i = 0; i < nore; i++){
 				crd[selector][i] = _amount[i] * p / temp[0];
 			}
-			mds[selector] = temp[0];
-			resetEpoch = e;
+			resetEpoch = epoch;
 		}            
 	
 		else{
-//			nod[selector]++;
-			for(uint i = 0; i < nore; i++){
+			for(uint i = 0; i < nore; i++)
 				crd[selector][i] += _amount[i] * p / temp[0];
-			}
-			if(mds[selector] < temp[0])
-				mds[selector] = temp[0];
 		}
 	}
 
@@ -159,27 +155,27 @@ contract Faucet{
 //	Regular checks and updates
 	   updateState();
 	   require(registered[msg.sender] != 0, "Your address has not been registered.");
-	   uint8 selector = uint8(e % 2);
+	   uint8 selector = uint8(epoch % 2);
 	   User storage user = userList[registered[msg.sender]];
-	   if(user.saturated == e) return;
+	   if(user.saturated == epoch) return;
 
-// 	Caculate and assign the (partial) share
-	   uint ratio = (mds[selector] * p) / user.ds[selector][0];
+// 	Calculate and assign the (partial) share
+	   uint ratio = p / user.ds[selector][0];
 	   uint share;
 	
 	   for(uint i = 0; i < nore; i++){
 		   share = ((k * ratio) / (p * p)) * user.d[selector][i];
 		   user.balance[i] += share;
-		   r[selector][i] -= share;
+		   lc[selector][i] -= share;
 	   }
 	}
 
 	function abs2percent(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * p)  / r[selector][resourceType];
+		return (value * p)  / c[selector][resourceType];
 	}
 
 	function percent2abs(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * r[selector][resourceType]) / p;
+		return (value * c[selector][resourceType]) / p;
 	} 
 
 	function viewBalance(uint _user) view public returns(uint[nore] memory) {
@@ -191,7 +187,7 @@ contract Faucet{
 	} 
 
 	function viewDemand(uint _user) view public returns(uint[nore] memory) {
-		uint selector = (e + 1) % 2;
+		uint selector = (epoch + 1) % 2;
 		uint[nore] memory value = userList[_user].d[selector];
 		return value;
 	}
@@ -201,20 +197,19 @@ contract Faucet{
 	}
 
 	function viewDominantShare(uint _user, uint func) view public returns(uint) {
-		uint selector = (e + func) % 2;
+		uint selector = (epoch + func) % 2;
 		return userList[_user].ds[selector][0];
 	}
 
-	function viewMaxDominantShare(uint e) view public returns(uint) {
-		return mds[e];
-	}
-
 	function viewCapacity(uint e) view public returns(uint[nore] memory) {
-		return r[e];
+		return c[e];
 	}
 
         function viewNumberOfDemands(uint e) view public returns(uint) {
                 return nod[e];
         }
 
+	function viewLeftoverCapacity(uint e) view public returns(uint[nore] memory) {
+		return lc[e];
+	}
 }

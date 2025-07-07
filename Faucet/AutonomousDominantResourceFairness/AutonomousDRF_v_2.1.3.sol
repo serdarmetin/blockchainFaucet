@@ -1,4 +1,5 @@
 // DRF employing AMF
+// In this version I used 1 / ds which simplified calculations
 
 pragma solidity ^0.5.13;
 
@@ -23,14 +24,12 @@ contract Faucet{
 	uint resetEpoch;
 	
 	struct User{
-	    address payable userAddress;
-	    uint ce;
-	    uint cr;
-	    uint[2] de;
-	    uint[nore] balance;
-	    uint[nore][2] d;
-	uint saturated;
-	uint[2][2] ds; // 0 for amount 1 for type
+		address payable userAddress;
+		uint ce;
+		uint de;
+		uint[nore] balance;
+		uint[nore][2] d;
+		uint[2] ds;
 	}
 
 	mapping(address => uint) registered;
@@ -38,13 +37,13 @@ contract Faucet{
 
 
 	constructor() public {
-	    owner = msg.sender;
-	    offset = block.number + 1;
-	for(uint i = 0; i < nore; i++){
-		er[0][i] = 150 * userQuota;
-		er[1][i] = 150 * userQuota;
-		r[0][i] = 150 * userQuota;
-		r[0][i] = 150 * userQuota;
+		owner = msg.sender;
+		offset = block.number + 1;
+		for(uint i = 0; i < nore; i++){
+			er[0][i] = 150 * userQuota;
+			er[1][i] = 150 * userQuota;
+			r[0][i] = 150 * userQuota;
+			r[0][i] = 150 * userQuota;
 		}
 	}
 
@@ -88,20 +87,17 @@ contract Faucet{
 */
 
 	function updateState() private {
-//	Update e & round: e starts from 1 to prevent triggering "already d" in the first e
+//	Update e & round: e starts from 1 to prevent triggering "already demanded" in the first e
 		if(e < (block.number - offset) / es + 1){
 			e = (block.number - offset) / es + 1;
 			uint8 selector = uint8((e) % 2);
-			for(uint i = 0; i < nore; i++){
+			for(uint i = 0; i < nore; i++)
 				r[1 - selector][i] = er[1 - selector][i] + r[1 - selector][i];
-			}
 	
-			k = (r[selector][0] * p * p) / (mds[selector] * crd[selector][0]);
-			for(uint i = 0; i < nore; i++){
-				if(k > (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]))
-					k = (r[selector][i] * p * p) / (mds[selector] * crd[selector][i]);
-			}
-
+			k = (r[selector][0] * mds[selector] * p) / crd[selector][0];
+			for(uint i = 0; i < nore; i++)
+				if(k > (r[selector][i] * mds[selector] * p) / crd[selector][i])
+					k = (r[selector][i] * mds[selector] * p) / crd[selector][i];
 		}
 	
 	}	
@@ -113,74 +109,60 @@ contract Faucet{
 		require(registered[msg.sender] != 0, "Your address has not been registered.");
 		uint8 selector = uint8((e + 1) % 2);
 	    	User storage user = userList[registered[msg.sender]];
-		require(user.de[selector] < e, "You have already made a demand in this e.");
+		require(user.de < e, "You have already made a demand in this epoch.");
 
 // 	Register demand
-		for(uint i = 0; i < nore; i++){
-		user.d[selector][i] = _amount[i];
-		}
+		for(uint i = 0; i < nore; i++)
+			user.d[selector][i] = _amount[i];
 
 //	Find and register the dominant share
-		uint[2] memory temp;
-		for(uint i = 0; i < nore; i++){
-			if(temp[0] < abs2percent(user.d[selector][i], i, selector)){
-				temp[0] = abs2percent(user.d[selector][i], i, selector);
-				temp[1] = i;
-			}
-		}
+		uint temp = (r[selector][0] * p) / user.d[selector][0];
+		for(uint i = 0; i < nore; i++)
+			if(temp > (r[selector][i] * p) / user.d[selector][i])
+				temp = (r[selector][i] * p) / user.d[selector][i];
 	
-		user.ds[selector][0] = temp[0];
-		user.ds[selector][1] = temp[1];
+		user.ds[selector] = temp;
 		
-//	Update user demand e
-		user.de[selector] = e;
+//	Update user demand epoch
+		user.de = e;
 	
 //	Systemwide updates
 		if(resetEpoch < e){
-//			nod[selector] = 1;
-			for(uint i = 0; i < nore; i++){
-				crd[selector][i] = _amount[i] * p / temp[0];
-			}
-			mds[selector] = temp[0];
+			for(uint i = 0; i < nore; i++)
+				crd[selector][i] = _amount[i] *  temp;
+			mds[selector] = temp;
 			resetEpoch = e;
 		}            
 	
 		else{
-//			nod[selector]++;
-			for(uint i = 0; i < nore; i++){
-				crd[selector][i] += _amount[i] * p / temp[0];
-			}
-			if(mds[selector] < temp[0])
-				mds[selector] = temp[0];
+			for(uint i = 0; i < nore; i++)
+				crd[selector][i] += _amount[i] * temp;
+			if(mds[selector] < temp)
+				mds[selector] = temp;
 		}
 	}
 
 	function claim() public{
 //	Regular checks and updates
-	   updateState();
-	   require(registered[msg.sender] != 0, "Your address has not been registered.");
-	   uint8 selector = uint8(e % 2);
-	   User storage user = userList[registered[msg.sender]];
-	   if(user.saturated == e) return;
+		updateState();
+		require(registered[msg.sender] != 0, "Your address has not been registered.");
+		uint8 selector = uint8(e % 2);
+		User storage user = userList[registered[msg.sender]];
+		require(user.ce < e, "You have already claimed your share in this epoch.");
 
 // 	Caculate and assign the (partial) share
-	   uint ratio = (mds[selector] * p) / user.ds[selector][0];
-	   uint share;
+		uint ratio = (user.ds[selector] * p) / mds[selector];
+		uint share;
 	
-	   for(uint i = 0; i < nore; i++){
-		   share = ((k * ratio) / (p * p)) * user.d[selector][i];
-		   user.balance[i] += share;
-		   r[selector][i] -= share;
-	   }
-	}
+		for(uint i = 0; i < nore; i++){
+			share = ((k * ratio) / (p * p)) * user.d[selector][i];
+			user.balance[i] += share;
+			r[selector][i] -= share;
+		}
 
-	function abs2percent(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * p)  / r[selector][resourceType];
+//	Update user claim epoch
+		user.ce = e;
 	}
-
-	function percent2abs(uint value, uint resourceType, uint selector) view private returns(uint) {
-		return (value * r[selector][resourceType]) / p;
-	} 
 
 	function viewBalance(uint _user) view public returns(uint[nore] memory) {
 		return userList[_user].balance;
@@ -202,7 +184,7 @@ contract Faucet{
 
 	function viewDominantShare(uint _user, uint func) view public returns(uint) {
 		uint selector = (e + func) % 2;
-		return userList[_user].ds[selector][0];
+		return userList[_user].ds[selector];
 	}
 
 	function viewMaxDominantShare(uint e) view public returns(uint) {
