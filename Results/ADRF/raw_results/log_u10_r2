@@ -10,14 +10,14 @@ Generating build data...
 AdrfSingleRoundProject is the active project.
 
 Launching 'ganache-cli --chain.vmErrorsOnRPCResponse true --server.port 8545 --miner.blockGasLimit 12000000 --wallet.totalAccounts 10 --hardfork istanbul --wallet.mnemonic brownie'...
-Transaction sent: 0x27d1a3ef9afb40a84ab6f415d70a47c0a5836012d390265153190ce48cd48772
+Transaction sent: 0xad86561d5041227b81115b02cdb20905346be61abe24e8292550de906796ef63
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.constructor confirmed   Block: 1   Gas used: 1111323 (9.26%)
+  Faucet.constructor confirmed   Block: 1   Gas used: 1128635 (9.41%)
   Faucet deployed at: 0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87
 
 
-Running 'scripts/faucet_tests_debug.py::main'...
-mnemonic: 'guilt assume auction staff effort dwarf fiber fog ready park kitten when'
+Running 'scripts/faucet_tests.py::main'...
+mnemonic: 'change volcano scheme thumb garbage stereo forward waste dawn disagree power uncover'
 Transaction sent: 0xdf6f6965d11a929c343ec0d94998f13a364392f6fc65caab6d0527d5834bad75
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
   Faucet.registerUser confirmed   Block: 2   Gas used: 86110 (0.72%)
@@ -54,908 +54,3008 @@ Transaction sent: 0x4c26ea268c2ef4b44294473068de928f49e0e7d4241ff70d9a65e0edb06f
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
   Faucet.registerUser confirmed   Block: 10   Gas used: 71110 (0.59%)
 
-Transaction sent: 0xd4885d6778e88e0151c0c1855c138c92f581b8f073e07807a2ce19f467fcc32a
+Transaction sent: 0x0c59051d0f95e35b21ab1fed8384347aee95b2837d9b7c63295dd715a8195c0a
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
   Faucet.registerUser confirmed   Block: 11   Gas used: 71110 (0.59%)
 
-Transaction sent: 0xaaca1531e7a2a2a239a838139de8fdc163c852b12b6ca298c7ed7092dd16aaf0
+Transaction sent: 0xfa51bea0fcdc1d13eb3f9649e78d6f4bdabdde7d9514b25cdea7e34218add9b4
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 12   Gas used: 203493 (1.70%)
+  Faucet.demand confirmed   Block: 12   Gas used: 199748 (1.66%)
 
-[4, 4]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (1500, 1500)
-User Dominat Share and Unit Share are: 2666 0
+[3, 1]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (1500000000, 500000000)
+User Dominat Share and Cycle Iterations are: 500000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 2666 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 500000000 0
 NumberOfDemands =  0 
 
-Transaction sent: 0xb505a1e1975100b95ed8f8a6c406f779c7c4cb3ded9e9525aee22ed90a08bcbf
+Transaction sent: 0xff7cbd844dfd301724544f4539cdfc190fc819fe96fc11c37e9fa7f3baa66465
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 13   Gas used: 140170 (1.17%)
+  Faucet.demand confirmed   Block: 13   Gas used: 131381 (1.09%)
 
-[9, 9]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (3000, 3000)
-User Dominat Share and Unit Share are: 6000 0
+[9, 5]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (2999999994, 1333333330)
+User Dominat Share and Cycle Iterations are: 166666666 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6000 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 166666666 0
 NumberOfDemands =  0 
 
-Transaction sent: 0x9fd6e64ed46d8327f3062bd3c5170532e812374e1f171af0e0c40df255aafb7b
+Transaction sent: 0xea7f5f6ac80f77854f2e21f7fd255881db5216dad9f1c87e760295a2f9a95024
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 14   Gas used: 156986 (1.31%)
+  Faucet.demand confirmed   Block: 14   Gas used: 133972 (1.12%)
 
-[6, 7]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (4285, 4500)
-User Dominat Share and Unit Share are: 4666 0
+[3, 5]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (3899999994, 2833333330)
+User Dominat Share and Cycle Iterations are: 300000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 0
 NumberOfDemands =  0 
 
-Transaction sent: 0x70a58595cb360092f5b27a5bbd7a01f379d0c733159d2c09a87c291b2926b94f
+Transaction sent: 0xead6ffdb8ecb060b7fb6d57eceeceb61889eeb700d25ffa25e96b52a4132db07
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 15   Gas used: 140170 (1.17%)
+  Faucet.demand confirmed   Block: 15   Gas used: 133972 (1.12%)
 
-[10, 5]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (5785, 5250)
-User Dominat Share and Unit Share are: 6666 0
+[6, 10]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (4799999994, 4333333330)
+User Dominat Share and Cycle Iterations are: 150000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6666 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 150000000 0
 NumberOfDemands =  0 
 
-Transaction sent: 0x78e12251c9afefdfaaf0a09b4ff3570b3e20ec3047aa54251dac3c24bdad16f5
+Transaction sent: 0xbb0f1761780a8162d4ddaa56adf419fa7033720f079f56abce9a1f1a23f34fcd
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 16   Gas used: 156986 (1.31%)
-
-[1, 3]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (6285, 6750)
-User Dominat Share and Unit Share are: 2000 0
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 2000 0
-NumberOfDemands =  0 
-
-Transaction sent: 0xcd1551c88f7365711cb46e72e10ecf44b0c527ac16a41618f6d35faf0ef1a62f
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 17   Gas used: 156986 (1.31%)
-
-[4, 7]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (7142, 8250)
-User Dominat Share and Unit Share are: 4666 0
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 0
-NumberOfDemands =  0 
-
-Transaction sent: 0x840cbecbe16616eba6f365f1cbd70dfe4ddd53d85a21ee90e46abad6b9f0fee9
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 18   Gas used: 156986 (1.31%)
-
-[8, 9]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (8475, 9750)
-User Dominat Share and Unit Share are: 6000 0
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6000 0
-NumberOfDemands =  0 
-
-Transaction sent: 0x8d8d54e6e9b7857188a65664cd3bc052d52903f10998db2531bc9eeb3ca5434e
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 19   Gas used: 135126 (1.13%)
+  Faucet.demand confirmed   Block: 16   Gas used: 131381 (1.09%)
 
 [5, 4]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (9975, 10950)
-User Dominat Share and Unit Share are: 3333 0
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (6299999994, 5533333330)
+User Dominat Share and Cycle Iterations are: 300000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 3333 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 0
 NumberOfDemands =  0 
 
-Transaction sent: 0xa15d38ae21f290c911e84d78f5b90049ed637e7bab4bb72c41df6072224c53ae
+Transaction sent: 0x6bb663a1deefb87245697c6f701f5ade5ccc6afe92c18d484519998af3d53fb6
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 20   Gas used: 135126 (1.13%)
+  Faucet.demand confirmed   Block: 17   Gas used: 131381 (1.09%)
 
-[6, 2]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (11475, 11450)
-User Dominat Share and Unit Share are: 4000 0
+[10, 8]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (7799999994, 6733333330)
+User Dominat Share and Cycle Iterations are: 150000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4000 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 150000000 0
 NumberOfDemands =  0 
 
-Transaction sent: 0x4a659f69e6a7c524031b941fbb3f630baace26b266ffb25b2684f86c602866c5
+Transaction sent: 0xc6eca3e853ba84c225c7b5a88704a22f77ca5063f8d2a5427ca3556ad4c2e9f4
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
-  Faucet.demand confirmed   Block: 21   Gas used: 156986 (1.31%)
+  Faucet.demand confirmed   Block: 18   Gas used: 133972 (1.12%)
 
-[1, 7]
-Capacities for Parity 0 = (1500, 1500)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 0
+[2, 4]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (8549999994, 8233333330)
+User Dominat Share and Cycle Iterations are: 375000000 0
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (0, 0)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 0
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 375000000 0
+NumberOfDemands =  0 
+
+Transaction sent: 0x3e5a8590fb5507f04a34da19a76b6c93f0e1eb861339ded4d0c5c089002a5b10
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
+  Faucet.demand confirmed   Block: 19   Gas used: 131381 (1.09%)
+
+[9, 4]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (10049999988, 8899999994)
+User Dominat Share and Cycle Iterations are: 166666666 0
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 166666666 0
+NumberOfDemands =  0 
+
+Transaction sent: 0x519d4252ca25b4f7de00153873fbbb275e7a0b5b74b2b68139bf07671b269cb6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
+  Faucet.demand confirmed   Block: 20   Gas used: 133972 (1.12%)
+
+[4, 6]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (11049999988, 10399999994)
+User Dominat Share and Cycle Iterations are: 250000000 0
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 250000000 0
+NumberOfDemands =  0 
+
+Transaction sent: 0x71a82b443f03962e1fc165fe4bcba5d1e660fd7a4f29a5d94724970068039cc0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 0
+  Faucet.demand confirmed   Block: 21   Gas used: 131381 (1.09%)
+
+[5, 4]
+Resource Reserves for Parity 0 = (1500, 1500)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 0
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (0, 0)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 0
 NumberOfDemands =  0 
 
 Transaction sent: 0x51138d322336b4a8d7ad641ca14a2a6a2fe6750d3f7ceda8ae154c8dd4073268
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 22   Gas used: 181601 (1.51%)
+  Faucet.claim confirmed   Block: 22   Gas used: 194946 (1.62%)
 
-[172 172]
-Capacities for Parity 0 = (1328, 1328)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2666 17376255
+177 59
+Resource Reserves for Parity 0 = (1323, 1441)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 500000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 2666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 500000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x8dfe621b4fc0d8f5f17cf1bcb9ff9fbdb9a489d687f6fb23f95bd89329ac3bf6
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 23   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 23   Gas used: 111665 (0.93%)
 
-[171 171]
-Capacities for Parity 0 = (1157, 1157)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 17376255
+171 95
+Resource Reserves for Parity 0 = (1152, 1346)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0xfa40693111bed2287a6900936a59ba7dac03c2fce3eec67a417f1949dffd378e
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 24   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 24   Gas used: 111665 (0.93%)
 
-[144 168]
-Capacities for Parity 0 = (1013, 989)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
+105 175
+Resource Reserves for Parity 0 = (1047, 1171)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x58c03096c7eb13aab267d0c43f07d0d34562e7ce45d12a05ac62fe5020610038
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 25   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 25   Gas used: 111665 (0.93%)
 
-[170  85]
-Capacities for Parity 0 = (843, 904)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6666 17376255
+102 170
+Resource Reserves for Parity 0 = (945, 1001)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x8c021a150a5321cf74a8b743bd5cbba1b0172e32f8f16c00e1fca967c73d1b8b
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 26   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 26   Gas used: 111665 (0.93%)
 
-[ 57 171]
-Capacities for Parity 0 = (786, 733)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2000 17376255
+175 140
+Resource Reserves for Parity 0 = (770, 861)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 2000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x0c1ddcfb2d08f30eec9a505494428a721d362c2a2f2b1c32f26b504c35713657
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 27   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 27   Gas used: 111665 (0.93%)
 
-[ 96 168]
-Capacities for Parity 0 = (690, 565)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
+170 136
+Resource Reserves for Parity 0 = (600, 725)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x35d4aa44aa287eb6160063cea0ef103015af23d860797de56d44d00b0c08c81d
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 28   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 28   Gas used: 111665 (0.93%)
 
-[152 171]
-Capacities for Parity 0 = (538, 394)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 17376255
+88 176
+Resource Reserves for Parity 0 = (512, 549)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 375000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 6000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 375000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0xb2f5cc7970823e557d06c30dd300f2cde2ec244377196bb03513cc6896aa7712
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 29   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 29   Gas used: 111665 (0.93%)
 
-[170 136]
-Capacities for Parity 0 = (368, 258)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 3333 17376255
+171 76
+Resource Reserves for Parity 0 = (341, 473)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 3333 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x8c44173e445ea8b10bd6ecfaae6562f3fe73f183cd16e4c47a2b3540739492f1
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 30   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 30   Gas used: 111665 (0.93%)
 
-[168  56]
-Capacities for Parity 0 = (200, 202)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4000 17376255
+116 174
+Resource Reserves for Parity 0 = (225, 299)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 250000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 250000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x88136439640b21f7ed29320cca320e032fee826970879162b0ab83b8e9ed7948
+Transaction sent: 0x79dfa0c5a5d9fe48ea35bf47070f8ff90f297dd9cbdc8c1004ced9b3fbe04fa7
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 1
-  Faucet.claim confirmed   Block: 31   Gas used: 90862 (0.76%)
+  Faucet.claim confirmed   Block: 31   Gas used: 111665 (0.93%)
 
-[ 24 168]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
+175 140
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (0, 0)
-User Dominat Share and Unit Share are: 4666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (0, 0)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x406d6da093b83c9fb1902e9a658266c2c30d3c931cba2f9da7b0c0c0a844fa79
+Transaction sent: 0x862cfed7a4f51b746d0967d025029732100f49bc7545f8ac6cd60dfc126bf158
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 32   Gas used: 188493 (1.57%)
+  Faucet.demand confirmed   Block: 32   Gas used: 172339 (1.44%)
 
-[8, 6]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2666 17376255
+[3, 5]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 500000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (1500, 1125)
-User Dominat Share and Unit Share are: 2666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (900000000, 1500000000)
+User Dominat Share and Cycle Iterations are: 500000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x2429a3edaf0a63928c22512481644f9713b119b8e650d43a7d6ab15da420d29e
+Transaction sent: 0x05061156fa4d3511024ec25748bd5a6a7b89ea90fa9f84ec5dc0cec624c161ab
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 33   Gas used: 156986 (1.31%)
+  Faucet.demand confirmed   Block: 33   Gas used: 118972 (0.99%)
 
-[2, 3]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 17376255
+[1, 5]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (2500, 2625)
-User Dominat Share and Unit Share are: 6000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (1200000000, 3000000000)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x1aafb241b105b7dadee6094ebb746b269379212d6430b11aaa6d677767f35d37
+Transaction sent: 0x771a30fd5c16abc898d9fde0a9100c9b299ed05537e42f44e8f01b1b5ba5894f
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 34   Gas used: 135126 (1.13%)
+  Faucet.demand confirmed   Block: 34   Gas used: 124013 (1.03%)
 
-[5, 3]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
+[2, 4]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (4000, 3525)
-User Dominat Share and Unit Share are: 4666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (1950000000, 4500000000)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x6b9c2d4968fbac9b014a3ec7097779e1ff8d782702309f37305d4d466773e874
+Transaction sent: 0x5f29d0fc069629e1046b361f0312d584fb930bc54fb001d2984beb3fc9494226
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 35   Gas used: 140170 (1.17%)
-
-[10, 9]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6666 17376255
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (5500, 4875)
-User Dominat Share and Unit Share are: 6666 17376255
-NumberOfDemands =  0 
-
-Transaction sent: 0x0e517c8ef93915e5cde0ca0559fd7f4e12066aeb61311a5966e9973c162305fc
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 36   Gas used: 135126 (1.13%)
-
-[1, 1]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2000 17376255
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (7001, 6376)
-User Dominat Share and Unit Share are: 2000 17376255
-NumberOfDemands =  0 
-
-Transaction sent: 0x8ed3fbcf5350e371d99ab5f07082c202b092746fb6291947eb57eda9cd59d1c7
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 37   Gas used: 135126 (1.13%)
-
-[3, 2]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (8501, 7376)
-User Dominat Share and Unit Share are: 4666 17376255
-NumberOfDemands =  0 
-
-Transaction sent: 0x3d55644a0a337d049bf7c9daeddaa7b55672b0e6143e12f163d9b38ff2c4600c
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 38   Gas used: 156986 (1.31%)
+  Faucet.demand confirmed   Block: 35   Gas used: 118972 (0.99%)
 
 [3, 7]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 17376255
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (9143, 8876)
-User Dominat Share and Unit Share are: 6000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (2592857142, 5999999998)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0xd41d71159825f9b63ab0ea6a897be21fc86470cc8c3a7befe1351b3bde6ac336
+Transaction sent: 0x0c57a1dfb1b95daacb1305de0a9f8872ba6a5d1dd25b4ec0e91be09f4519c71e
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 39   Gas used: 135126 (1.13%)
+  Faucet.demand confirmed   Block: 36   Gas used: 116381 (0.97%)
 
-[9, 9]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 3333 17376255
+[6, 6]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (10643, 10376)
-User Dominat Share and Unit Share are: 3333 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (4092857142, 7499999998)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x314548ceb758f082ede6f275fc4f75516c2e9945ae7f9c02a031fe8144123268
+Transaction sent: 0x0de1f413e09aa3688dc83a86c49d382cf76dda7395b59d6bc8cad3d16bf163fb
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 40   Gas used: 156986 (1.31%)
+  Faucet.demand confirmed   Block: 37   Gas used: 116381 (0.97%)
 
-[2, 10]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4000 17376255
+[10, 7]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (10943, 11876)
-User Dominat Share and Unit Share are: 4000 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (5592857142, 8549999998)
+User Dominat Share and Cycle Iterations are: 150000000 59760956
 NumberOfDemands =  0 
 
-Transaction sent: 0x944c0e123efaeb4b42418e249713cd0c17df7c8312935912b26d1d4a4abcc68e
+Transaction sent: 0xbf766719bea41ab6c8c11b73fea714317aeba736243a637047a3d17f0c8dabd5
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
-  Faucet.demand confirmed   Block: 41   Gas used: 135126 (1.13%)
+  Faucet.demand confirmed   Block: 38   Gas used: 116381 (0.97%)
 
-[8, 1]
-Capacities for Parity 0 = (176, 34)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 17376255
+[6, 5]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 375000000 59760956
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1500, 1500)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4666 17376255
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (7092857142, 9799999998)
+User Dominat Share and Cycle Iterations are: 375000000 59760956
+NumberOfDemands =  0 
+
+Transaction sent: 0x29a6bbdf09eedce64f5a406bc9692f29cba778d34656f0e08b3124b655e11475
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
+  Faucet.demand confirmed   Block: 39   Gas used: 116381 (0.97%)
+
+[7, 6]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (8592857140, 11085714282)
+User Dominat Share and Cycle Iterations are: 166666666 59760956
+NumberOfDemands =  0 
+
+Transaction sent: 0x3ea1d1c66cf83d8c0747271e9aff9a2452005709ad4cc87e57dbdc3ed427e0ff
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
+  Faucet.demand confirmed   Block: 40   Gas used: 116381 (0.97%)
+
+[4, 1]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 250000000 59760956
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (10092857140, 11460714282)
+User Dominat Share and Cycle Iterations are: 250000000 59760956
+NumberOfDemands =  0 
+
+Transaction sent: 0x4c1dc69cb65a2524da2a1e57961c579d5ca8490e38ae39677475b2f8b10d045a
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 2
+  Faucet.demand confirmed   Block: 41   Gas used: 118972 (0.99%)
+
+[3, 8]
+Resource Reserves for Parity 0 = (50, 159)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1500, 1500)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 300000000 59760956
 NumberOfDemands =  0 
 
 Transaction sent: 0x785d9b70347d118b4a7e478bfeb461e43bff233c6951550db955e130748833b2
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 42   Gas used: 101567 (0.85%)
+  Faucet.claim confirmed   Block: 42   Gas used: 109172 (0.91%)
 
-[176 132]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2666 18084264
+102 170
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 500000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1324, 1368)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 2666 18084264
+Resource Reserves for Parity 1 = (1398, 1330)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 500000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0xb33c1febee163f8838087595e8ef01ce7e5a17b0b9fa0bbffb767410c2f158d1
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 43   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 43   Gas used: 66665 (0.56%)
 
-[120 180]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 18084264
+34 170
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1204, 1188)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 6000 18084264
+Resource Reserves for Parity 1 = (1364, 1160)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 166666666 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0x06c2779caaa7227b8d42e46e41c0ead4385d619540d0b87f5f5aab37581ef8e4
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 44   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 44   Gas used: 66665 (0.56%)
 
-[180 108]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 18084264
+86 172
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1024, 1080)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4666 18084264
+Resource Reserves for Parity 1 = (1278, 988)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0xb99895965f5e394ee773abc2158dc3878059c431cbed8d35ed3b5efdc560810a
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 45   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 45   Gas used: 66665 (0.56%)
 
-[180 162]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6666 18084264
+72 168
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (844, 918)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 6666 18084264
+Resource Reserves for Parity 1 = (1206, 820)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 150000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0x45459a8b4c49619e30dcf83b8a523a7aad2b985332eb745477cdbdab0995e197
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 46   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 46   Gas used: 66665 (0.56%)
 
-[181 181]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 2000 18084264
+168 168
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (663, 737)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 2000 18084264
+Resource Reserves for Parity 1 = (1038, 652)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0x5032bcfcf7e585922374083dc47142b2cc8191de69c3faeeabb44c4a704dbfa0
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 47   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 47   Gas used: 66665 (0.56%)
 
-[180 120]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 18084264
+170 119
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 150000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (483, 617)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4666 18084264
+Resource Reserves for Parity 1 = (868, 533)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 150000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0xa9abd3d029c80decc303db61f80ec04f8b014dc36b4cddd2a6185738718b0c64
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 48   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 48   Gas used: 66665 (0.56%)
 
-[ 75 175]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 6000 18084264
+168 140
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 375000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (408, 442)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 6000 18084264
+Resource Reserves for Parity 1 = (700, 393)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 375000000 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0xea8dbca157f7f19c67ef376a2b579f637da546394c0aba174433d812a2b4c6ee
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 49   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 49   Gas used: 66665 (0.56%)
 
-[180 180]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 3333 18084264
+168 144
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 166666666 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (228, 262)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 3333 18084264
+Resource Reserves for Parity 1 = (532, 249)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 166666666 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0xdd0a24747fbada601c96fb764011706a523e2342fee1628ba11db80de4cbadbf
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 50   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 50   Gas used: 66665 (0.56%)
 
-[ 36 180]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4000 18084264
+172 43
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 250000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (192, 82)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4000 18084264
+Resource Reserves for Parity 1 = (360, 206)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 250000000 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0x99da8c5c73041d7b2f4c5588cc0bc40ba5a9bb45cba3519d2dd863c64c18ffe7
+Transaction sent: 0xb180142fd546c5baf4a7cd4226d6b46c448f65c619eac8d89a00067096cce286
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 3
-  Faucet.claim confirmed   Block: 51   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 51   Gas used: 66665 (0.56%)
 
-[176  22]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (11689, 12950)
-User Dominat Share and Unit Share are: 4666 18084264
+63 168
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (12549999988, 11599999994)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4666 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 300000000 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0xc7f133bbae93b5919eb20c67756c3945fba446ecc61d2079a696bc9877169590
+Transaction sent: 0x9b94e9fa065ed6f944af1901e869073e64bf8f754437d2e5ac7a20914397e015
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 52   Gas used: 105353 (0.88%)
+  Faucet.demand confirmed   Block: 52   Gas used: 71348 (0.59%)
 
-[2, 5]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (613, 1534)
-User Dominat Share and Unit Share are: 3259 18084264
+[3, 1]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (1549999998, 516666666)
+User Dominat Share and Cycle Iterations are: 516666666 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 3259 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 516666666 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0x0536bd506ff736df776f4fa73849b2498065fe7dc4573191ec1f9e99b0606749
+Transaction sent: 0x66e0769a61bac733898b27b1fdd60357b7f07a9c983f4a5ab9fa52910a1f2e3e
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 53   Gas used: 102030 (0.85%)
+  Faucet.demand confirmed   Block: 53   Gas used: 79013 (0.66%)
 
-[3, 7]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (1270, 3068)
-User Dominat Share and Unit Share are: 4563 18084264
+[2, 3]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (2655999998, 2175666666)
+User Dominat Share and Cycle Iterations are: 553000000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4563 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 553000000 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0xe025fd98660c509556f11e2c34a4aa5d14d5d8d9e220c5cd04a270cd628e944f
+Transaction sent: 0x2a829f7013b10cb9c033367e9611904649fb3f538934764405b550df0459e15c
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 54   Gas used: 69370 (0.58%)
+  Faucet.demand confirmed   Block: 54   Gas used: 73972 (0.62%)
 
-[9, 1]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (2946, 3254)
-User Dominat Share and Unit Share are: 5369 18084264
+[4, 6]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (3761999998, 3834666666)
+User Dominat Share and Cycle Iterations are: 276500000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5369 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 276500000 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0xf97e7a308eb7ef098aa7ea8cf5da83ba573df6107c866e1b499e750a7af44a02
+Transaction sent: 0x84407ef4ffc5e39e0ccf03a2a3aea55c29faed235a88810784bb417ecf6b40ff
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 55   Gas used: 75126 (0.63%)
+  Faucet.demand confirmed   Block: 55   Gas used: 67181 (0.56%)
 
-[3, 2]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (4622, 4371)
-User Dominat Share and Unit Share are: 1789 18084264
+[6, 4]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (5311999996, 4867999998)
+User Dominat Share and Cycle Iterations are: 258333333 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1789 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 258333333 43400385
 NumberOfDemands =  0 
 
-Transaction sent: 0x5e06b13d507d892496038052256d4e97b9fb221f2f4422c7b21a5da32d4fe431
+Transaction sent: 0x6dec412ae3c7224c6a5ea47fcab54ff43937f1176221937ecd7e167816eea485
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 56   Gas used: 82830 (0.69%)
-
-[8, 9]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (5985, 5905)
-User Dominat Share and Unit Share are: 5867 18084264
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5867 18084264
-NumberOfDemands =  0 
-
-Transaction sent: 0x936342b1cb429dec9b1f557948463511ade61b8a537f81495dea15ea14128e0d
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 57   Gas used: 64326 (0.54%)
-
-[8, 6]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (7661, 7162)
-User Dominat Share and Unit Share are: 4773 18084264
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4773 18084264
-NumberOfDemands =  0 
-
-Transaction sent: 0xba458e7551b4fae080ec63598927c7d08acb328ef9f5de4beaf48540500fd1ab
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 58   Gas used: 60126 (0.50%)
-
-[8, 6]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (9337, 8419)
-User Dominat Share and Unit Share are: 4773 18084264
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4773 18084264
-NumberOfDemands =  0 
-
-Transaction sent: 0x1342e458daa4d3a0de14764ae84dd4037c0f18b6d8fd1139e53de21509ec2fd1
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 59   Gas used: 96986 (0.81%)
-
-[8, 8]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (10871, 9953)
-User Dominat Share and Unit Share are: 5215 18084264
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5215 18084264
-NumberOfDemands =  0 
-
-Transaction sent: 0xa67330c56f87ab00f0b26f9ee07596c0f7510ebc7c973d293ec9a46df117578b
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 60   Gas used: 96986 (0.81%)
-
-[3, 3]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (12405, 11487)
-User Dominat Share and Unit Share are: 1955 18084264
-NumberOfDemands =  0 
-
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1955 18084264
-NumberOfDemands =  0 
-
-Transaction sent: 0x0b1e95723dfef07f18098aacb1ad5e721281cfd6a32bd37f1e7dcfb4d0fee34e
-  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
-  Faucet.demand confirmed   Block: 61   Gas used: 73586 (0.61%)
+  Faucet.demand confirmed   Block: 56   Gas used: 79013 (0.66%)
 
 [1, 2]
-Capacities for Parity 0 = (1676, 1534)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 1303 18084264
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (6141499996, 6526999998)
+User Dominat Share and Cycle Iterations are: 829500000 43400385
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (16, 60)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1303 18084264
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 829500000 43400385
+NumberOfDemands =  0 
+
+Transaction sent: 0x68fe85a7e78d48fdbf8dd6b921355a7e32565d365c7b8333d352f4724118a8e9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
+  Faucet.demand confirmed   Block: 57   Gas used: 71381 (0.59%)
+
+[5, 1]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (7691499996, 6836999998)
+User Dominat Share and Cycle Iterations are: 310000000 43400385
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 310000000 43400385
+NumberOfDemands =  0 
+
+Transaction sent: 0x5635e6d211a0fed5a08f150ecdd03f10fc4894efb4deeb6bcc1985756011964e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
+  Faucet.demand confirmed   Block: 58   Gas used: 69772 (0.58%)
+
+[2, 3]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (8797499996, 8495999998)
+User Dominat Share and Cycle Iterations are: 553000000 43400385
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 553000000 43400385
+NumberOfDemands =  0 
+
+Transaction sent: 0xafe7446239d9d791b6dd056819a0fb17d56eb2518f13ba71826a64043f6cafbc
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
+  Faucet.demand confirmed   Block: 59   Gas used: 73972 (0.62%)
+
+[2, 10]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (9129299996, 10154999998)
+User Dominat Share and Cycle Iterations are: 165900000 43400385
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 165900000 43400385
+NumberOfDemands =  0 
+
+Transaction sent: 0x05245bcd182651373892424b2f160030895e87cfaa888f90a10c08f89fa02ebf
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
+  Faucet.demand confirmed   Block: 60   Gas used: 73972 (0.62%)
+
+[2, 9]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (9497966662, 11813999995)
+User Dominat Share and Cycle Iterations are: 184333333 43400385
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 184333333 43400385
+NumberOfDemands =  0 
+
+Transaction sent: 0xdf503513e7152a9020bf32f49eb87c13f330e4e66646ba20d5585f3aa1dc771f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 4
+  Faucet.demand confirmed   Block: 61   Gas used: 67181 (0.56%)
+
+[9, 4]
+Resource Reserves for Parity 0 = (1550, 1659)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 172222222 43400385
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (297, 38)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 172222222 43400385
 NumberOfDemands =  0 
 
 Transaction sent: 0x13770ace6c30b30775a0c1d51b753cefeee76e43c7264aaf041831db2379805a
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 62   Gas used: 106601 (0.89%)
+  Faucet.claim confirmed   Block: 62   Gas used: 109172 (0.91%)
 
-[ 72 180]
-Capacities for Parity 0 = (1604, 1354)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 3259 20080056
+204 68
+Resource Reserves for Parity 0 = (1346, 1591)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 516666666 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 3259 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 516666666 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x2b2d80215b2ff954b467fb87bb0e3cdb5422639e7d20db3d5cee3375e29d4c52
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 63   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 63   Gas used: 66665 (0.56%)
 
-[ 75 175]
-Capacities for Parity 0 = (1529, 1179)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 4563 20080056
+146 219
+Resource Reserves for Parity 0 = (1200, 1372)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4563 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0xa96b0bad9ec111c64ddbb4e4a6a411b57c3e83d82d9fb088f660d9e8b6388d79
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 64   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 64   Gas used: 66665 (0.56%)
 
-[189  21]
-Capacities for Parity 0 = (1340, 1158)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 5369 20080056
+144 216
+Resource Reserves for Parity 0 = (1056, 1156)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 276500000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5369 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 276500000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x0fa7f62447070944e8b72173f04065115f00b5b479d0d2297e2cd8a1abdacc1c
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 65   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 65   Gas used: 66665 (0.56%)
 
-[195 130]
-Capacities for Parity 0 = (1145, 1028)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 1789 20080056
+204 136
+Resource Reserves for Parity 0 = (852, 1020)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 258333333 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1789 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 258333333 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x262ba21397c3ae1675ff400d05b92d246ee1bb5effd1de4e62b7255d8506530b
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 66   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 66   Gas used: 66665 (0.56%)
 
-[160 180]
-Capacities for Parity 0 = (985, 848)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 5867 20080056
+110 220
+Resource Reserves for Parity 0 = (742, 800)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 829500000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5867 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 829500000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x0ddb0c906d9462a359f9ef058bc28796e294aa15edf983bbd132cd2ac29a0a9d
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 67   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 67   Gas used: 66665 (0.56%)
 
-[192 144]
-Capacities for Parity 0 = (793, 704)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 4773 20080056
+205 41
+Resource Reserves for Parity 0 = (537, 759)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 310000000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4773 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 310000000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0xcf51320ae384023c4690e86dbe52a3dc6f402c52b7cdff00f5d42c62f36ff7e6
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 68   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 68   Gas used: 66665 (0.56%)
 
-[192 144]
-Capacities for Parity 0 = (601, 560)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 4773 20080056
+146 219
+Resource Reserves for Parity 0 = (391, 540)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 4773 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x8c875357da3d383e64e062af171ca36f1ecc456979066a8ace2bc00d89862199
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 69   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 69   Gas used: 66665 (0.56%)
 
-[176 176]
-Capacities for Parity 0 = (425, 384)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 5215 20080056
+44 220
+Resource Reserves for Parity 0 = (347, 320)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 165900000 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 5215 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 165900000 110065802
 NumberOfDemands =  0 
 
 Transaction sent: 0x879a2d132efd157b3003a4e85cafe660dac7cab5fd89d54b4c2d4ad0cdbb5da5
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 70   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 70   Gas used: 66665 (0.56%)
 
-[180 180]
-Capacities for Parity 0 = (245, 204)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 1955 20080056
+48 216
+Resource Reserves for Parity 0 = (299, 104)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 184333333 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1955 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 184333333 110065802
 NumberOfDemands =  0 
 
-Transaction sent: 0x5b8298cd978423c82aacc296e02c56abe992882d8e1ec090a36ba4b198b0e3e9
+Transaction sent: 0x15ac3e814d0296ba8d3d6b5f2f493b0701840548079c2bc6a78d61c24f287053
   Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 5
-  Faucet.claim confirmed   Block: 71   Gas used: 60862 (0.51%)
+  Faucet.claim confirmed   Block: 71   Gas used: 66665 (0.56%)
 
-[ 90 180]
-Capacities for Parity 0 = (155, 24)
-Cumulative Demands for Parity 0 = (13172, 13021)
-User Dominat Share and Unit Share are: 1303 20080056
+198 88
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 172222222 110065802
 NumberOfDemands =  0 
 
-Capacities for Parity 1 = (1516, 1560)
-Cumulative Demands for Parity 1 = (12443, 12063)
-User Dominat Share and Unit Share are: 1303 20080056
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (10655357140, 12960714282)
+User Dominat Share and Cycle Iterations are: 172222222 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xfbeec6198bc3f44a968e1c4368a70201322a40b605dc383b55a4db4701a26fc6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 72   Gas used: 82339 (0.69%)
+
+[2, 3]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 516666666 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (1025333332, 1537999998)
+User Dominat Share and Cycle Iterations are: 516666666 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0x80d3c0c0882cde17e15b05e33b5897a445b51ace120cbb58307870446d6ccf2c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 73   Gas used: 73972 (0.62%)
+
+[7, 7]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (2563333327, 3075999993)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0x1d99417e5d4be0df86f343e542880ecd43c31a9307ca5100c398ea49e20eed14
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 74   Gas used: 71381 (0.59%)
+
+[10, 5]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 276500000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (4360333327, 3974499993)
+User Dominat Share and Cycle Iterations are: 276500000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0x793bc171d1bb0c665a6356b7d28e5314448819df9fcc12800308783fb8a2dd92
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 75   Gas used: 73972 (0.62%)
+
+[1, 5]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 258333333 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (4667933327, 5512499993)
+User Dominat Share and Cycle Iterations are: 258333333 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xa85b0bcc5b81ca8d8b85c0c4ec32e0990d8ca39c9ff87c2d77374952a0bb5ba3
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 76   Gas used: 71381 (0.59%)
+
+[7, 2]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 829500000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (6464933322, 6025928563)
+User Dominat Share and Cycle Iterations are: 829500000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xec1b23774e75a0164c8d19693df345c7b3c62d78fbbe03cbfda9efe75ad2af28
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 77   Gas used: 71381 (0.59%)
+
+[9, 1]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 310000000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (8261933316, 6225595229)
+User Dominat Share and Cycle Iterations are: 310000000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0x66ef8ef875bfc684471b6d9e1d75d7c290634d2f71eb1a1eade88586119a77e6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 78   Gas used: 79013 (0.66%)
+
+[2, 2]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (9799933316, 7763595229)
+User Dominat Share and Cycle Iterations are: 553000000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xffba45cef24c292491e24d0cd73be8dac66e2c40fc527fe42f787ec106c0cb71
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 79   Gas used: 71381 (0.59%)
+
+[6, 3]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 165900000 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (11596933316, 8662095229)
+User Dominat Share and Cycle Iterations are: 165900000 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0x9068a73d243777bdc89d771c6ef1da29d6782be7d6254f7d6ad4b90b148fe8ac
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 80   Gas used: 73972 (0.62%)
+
+[1, 8]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 184333333 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (11789183316, 10200095229)
+User Dominat Share and Cycle Iterations are: 184333333 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xe919a7189eceb9290eb65f2557a1de8497a9776c0e52dec6983e47b8699f4af7
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 6
+  Faucet.demand confirmed   Block: 81   Gas used: 73972 (0.62%)
+
+[1, 6]
+Resource Reserves for Parity 0 = (101, 16)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 172222222 110065802
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1797, 1538)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 172222222 110065802
+NumberOfDemands =  0 
+
+Transaction sent: 0xc50c532ee20fb81c3f79c637a956cc660b250fe618a7a8739d9b4bccdc5aff1b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 82   Gas used: 109172 (0.91%)
+
+134 201
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 516666666 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1663, 1337)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 516666666 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xafc782a67c90957c4692dbd1403a12c8f8d2abdf30812a8fd005203c25a70934
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 83   Gas used: 66665 (0.56%)
+
+196 196
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1467, 1141)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 553000000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xd20a939941874c173a6a1a6ce0cab2b76a6cc159c329023c9e41ebd5659f1877
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 84   Gas used: 66665 (0.56%)
+
+230 115
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 276500000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1237, 1026)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 276500000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xcc4d2487dd203bd77985b9325b872cc50329525be9c51f312f724658cffe11dd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 85   Gas used: 66665 (0.56%)
+
+40 200
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 258333333 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1197, 826)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 258333333 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xf7cf5ed9b37255f6db26ff48f42bb188b1457be9e15188e2c82f41cdecd6e2ba
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 86   Gas used: 66665 (0.56%)
+
+231 66
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 829500000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (966, 760)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 829500000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x1611ce4e7227df55f8acd27de2ec1a0ec6fbbcf581db3172ebbcd45c4752fa3b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 87   Gas used: 66665 (0.56%)
+
+234 26
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 310000000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (732, 734)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 310000000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xf919c8ea864d72e8c5099a81191cb82387f0f84977b60c413bdabdd89df01dce
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 88   Gas used: 66665 (0.56%)
+
+200 200
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 553000000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (532, 534)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 553000000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xd7c911739dfaf8513c04e78b624a1b77fc00c9ea4b088b2ba76d47c214c6deac
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 89   Gas used: 66665 (0.56%)
+
+234 117
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 165900000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (298, 417)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 165900000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xeb071a38b124edaa8411a2d544702c3419f338f7decd1e2e6f7dcc5555785d0b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 90   Gas used: 66665 (0.56%)
+
+25 200
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 184333333 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (273, 217)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 184333333 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x1ccf5a574e5bf7d7921d56363e425e589a0813a739e7a714ad049a77aae6b9cb
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 7
+  Faucet.claim confirmed   Block: 91   Gas used: 66665 (0.56%)
+
+33 198
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (11047966660, 12502888883)
+User Dominat Share and Cycle Iterations are: 172222222 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 172222222 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x794f63a25f8d6b20278bba94498689a9044b43cc3a0ee904aff882021cab0b20
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 92   Gas used: 78139 (0.65%)
+
+[3, 5]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (909600000, 1516000000)
+User Dominat Share and Cycle Iterations are: 303200000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 303200000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x3f4023b713fae5972dfaa9f9abd43d6cd626ee8e552aa7579b0cd3fd3c47f9f9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 93   Gas used: 71381 (0.59%)
+
+[9, 5]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (2510599992, 2405444440)
+User Dominat Share and Cycle Iterations are: 177888888 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 177888888 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x324d5c3a790469aa3662404eed450f7bb96245866fc72a7120497a46dff1228d
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 94   Gas used: 73972 (0.62%)
+
+[5, 10]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (3268599992, 3921444440)
+User Dominat Share and Cycle Iterations are: 151600000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 151600000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x72d9a2a8521cbbd64b658c9adf135ac0e7a4c48891ada639298156e53316a2f8
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 95   Gas used: 73972 (0.62%)
+
+[4, 8]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (4026599992, 5437444440)
+User Dominat Share and Cycle Iterations are: 189500000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 189500000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x67d87a7955b0b402bfe9515870cafea3236f4caaac49dd4798638f3fe4b35865
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 96   Gas used: 71381 (0.59%)
+
+[8, 5]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (5627599992, 6438069440)
+User Dominat Share and Cycle Iterations are: 200125000 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 200125000 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x7e4e04156658e1d0933b4d644d04c704d57b07adbbcdb52c2c783f9c871e8e80
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 97   Gas used: 73972 (0.62%)
+
+[1, 6]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (5880266658, 7954069436)
+User Dominat Share and Cycle Iterations are: 252666666 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 252666666 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x5c37c988dc81f239bb86f7ef1479367760679d8be8d5b5bdb736a951e79d0455
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 98   Gas used: 67181 (0.56%)
+
+[9, 3]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (7481266650, 8487736100)
+User Dominat Share and Cycle Iterations are: 177888888 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 177888888 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xc60c62807aeff0f57991ee9f483f2cd36709bcb3317a9a338bb862db7ffb0a62
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 99   Gas used: 73972 (0.62%)
+
+[1, 9]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (7649711094, 10003736096)
+User Dominat Share and Cycle Iterations are: 168444444 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 168444444 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x683e1cebf4141bb973c64a606dd01030f13857d3ca68c7479cd29a6006bfad04
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 100   Gas used: 76422 (0.64%)
+
+[3, 2]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (9250711092, 11071069428)
+User Dominat Share and Cycle Iterations are: 533666666 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 533666666 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0x960da7130976cfe2f958f7760f09739ed627a2ac36888cc8417365dc0d8ed26f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 8
+  Faucet.demand confirmed   Block: 101   Gas used: 71381 (0.59%)
+
+[3, 1]
+Resource Reserves for Parity 0 = (1601, 1516)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 100759277
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (240, 19)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 533666666 100759277
+NumberOfDemands =  0 
+
+Transaction sent: 0xec4e5cfb36ffe5d58be9ee34dc37b357f6ebcd741ec52d09a1eb1b0ae3f235fa
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 102   Gas used: 109172 (0.91%)
+
+117 195
+Resource Reserves for Parity 0 = (1484, 1321)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 303200000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 303200000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xba79b5d7f2e70555dec9999ae5e4b2a55b79f51910125931dd52479a995aa743
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 103   Gas used: 66665 (0.56%)
+
+207 115
+Resource Reserves for Parity 0 = (1277, 1206)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xa8de849ed3e0f751704e2d8af1258ea15ff9bc5de7ad3dcaf11466241ac0c04c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 104   Gas used: 66665 (0.56%)
+
+95 190
+Resource Reserves for Parity 0 = (1182, 1016)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 151600000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 151600000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x2d3222dd2c6225f61784cfa79861c145e314d1e7e85a363fd5b02723776091c9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 105   Gas used: 66665 (0.56%)
+
+96 192
+Resource Reserves for Parity 0 = (1086, 824)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 189500000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 189500000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xc134e0b88ca38ad6a8430c0aa4f95ce249829b79dc38cd5a29fb87847f8203bf
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 106   Gas used: 66665 (0.56%)
+
+208 130
+Resource Reserves for Parity 0 = (878, 694)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 200125000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 200125000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xbfa84650eefb66fadc6e2c55e208f1ce9ba3f51b9f71c61b79d52b48a8de0acd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 107   Gas used: 66665 (0.56%)
+
+33 198
+Resource Reserves for Parity 0 = (845, 496)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 252666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 252666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x4c3a6bff8ca634b49bdc01e326b201caf9ea930ee769ce7271408bc34bfd22aa
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 108   Gas used: 66665 (0.56%)
+
+207 69
+Resource Reserves for Parity 0 = (638, 427)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x1be9b570bacc1457cc5e6dd0ddcbb14dcb8ae44992a6bdc08282842c1cbcc75b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 109   Gas used: 66665 (0.56%)
+
+22 198
+Resource Reserves for Parity 0 = (616, 229)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 168444444 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 168444444 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x90ec1f4ec2a3e2bc793040d7cb504bf435a154b004b0a1bc6dbd268a375f6815
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 110   Gas used: 66665 (0.56%)
+
+207 138
+Resource Reserves for Parity 0 = (409, 91)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x06d7531a4c9979389c952873afbd6435b048b797a87ca5bfe5fcdc71768afb98
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 9
+  Faucet.claim confirmed   Block: 111   Gas used: 66665 (0.56%)
+
+207 69
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12045516649, 11738095227)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x3abfae11e5730bfe709a142213d262741ddd306f775a136a25816bc9750f9332
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 112   Gas used: 79748 (0.66%)
+
+[7, 5]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 303200000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (1739999996, 1242857140)
+User Dominat Share and Cycle Iterations are: 303200000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xb051b5f48cdb0f904957dbbe280c214fdad126afe505438097875b5eec87ad18
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 113   Gas used: 67181 (0.56%)
+
+[7, 3]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (3479999992, 1988571424)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x7d1039c0a28053f59926e4b8b4ea58922286fbf03a1df2dc347840e13d5bcaa3
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 114   Gas used: 67181 (0.56%)
+
+[10, 8]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 151600000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (5219999992, 3380571424)
+User Dominat Share and Cycle Iterations are: 151600000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x284a5714386aac79edf05ca71519bc4f6c180613b6b5c150c5f7591bd4f4bf04
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 115   Gas used: 73972 (0.62%)
+
+[8, 7]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 189500000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (6955999992, 4899571424)
+User Dominat Share and Cycle Iterations are: 189500000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xa69bb539423e1430aa5bd81eac9095761a9db3b3f48508b2d57cb909a11a6b27
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 116   Gas used: 76422 (0.64%)
+
+[6, 4]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 200125000 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (8695999992, 6059571424)
+User Dominat Share and Cycle Iterations are: 200125000 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x847d5b38a8dc44b6119b0ee889678d8a8c27a8ce022c32bd97db0146a7eb14cd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 117   Gas used: 76422 (0.64%)
+
+[3, 2]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 252666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (10435999992, 7219571424)
+User Dominat Share and Cycle Iterations are: 252666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0x95277da151273d918c1bb98ccaace10b416c41259f498d91c8e7d7598e4e2b64
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 118   Gas used: 73972 (0.62%)
+
+[1, 5]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (10739799992, 8738571424)
+User Dominat Share and Cycle Iterations are: 177888888 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xfa93dd50c23f0ef7cc3bb4f1a9b0446ac59a74dea91751f7a68916b53214b93d
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 119   Gas used: 69772 (0.58%)
+
+[6, 7]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 168444444 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12041799992, 10257571424)
+User Dominat Share and Cycle Iterations are: 168444444 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xeac07210f36b01e8b055526bfba1e717a5ced5771faad65c516e7875c19f1ac8
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 120   Gas used: 73972 (0.62%)
+
+[4, 10]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (12649399992, 11776571424)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xb34f09d9b2e0e80120265a66bc75008ef3ed42392e61e3bbdaaad0eee158fe67
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 10
+  Faucet.demand confirmed   Block: 121   Gas used: 73972 (0.62%)
+
+[7, 8]
+Resource Reserves for Parity 0 = (202, 22)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1740, 1519)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 533666666 69716248
+NumberOfDemands =  0 
+
+Transaction sent: 0xca206728ad52f8463f1f8d578ae1a68ea299dd17b7869b41b08b4acade5cb8dc
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 122   Gas used: 109172 (0.91%)
+
+196 140
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 303200000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1544, 1379)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 303200000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x6642d396ca7775c695f65a426a004a69fc193c7ec0b09da9389c2452844ea81b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 123   Gas used: 66665 (0.56%)
+
+196 84
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1348, 1295)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 177888888 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xa209dc1dd6dc0021e3fb365f59c4fb4497082781374e90cd23c74d7a52622fea
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 124   Gas used: 66665 (0.56%)
+
+190 152
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 151600000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1158, 1143)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 151600000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x00cf2d4392d04d4e0fbb33e3af77eac0590f826517924b4f9eff80f0c53933a9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 125   Gas used: 66665 (0.56%)
+
+192 168
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 189500000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (966, 975)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 189500000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xe800e63e3b32eca469864d34396e6fe0b80f329b507728fb41a2cf905427271e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 126   Gas used: 66665 (0.56%)
+
+198 132
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 200125000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (768, 843)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 200125000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xa49b7b10d92f321eb220b3986a79d76a3e63fa8c911b8084e8dd4881a285b73b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 127   Gas used: 66665 (0.56%)
+
+198 132
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 252666666 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (570, 711)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 252666666 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xaa9285b55e7dd564fb8905226bbbccb5e238769dc8b07678230c473a5b4313da
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 128   Gas used: 66665 (0.56%)
+
+34 170
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 177888888 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (536, 541)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 177888888 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x4d6ac51b9aa3ca4ac3bcf70d75981b74cf4c613b4314b090683eac28b820aebd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 129   Gas used: 66665 (0.56%)
+
+144 168
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 168444444 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (392, 373)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 168444444 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x29f3d1cf5f20880b0befc0c5cb251e8b4697aa899b17cbba51b17c27c361dc24
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 130   Gas used: 66665 (0.56%)
+
+68 170
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (324, 203)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 533666666 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x946c528c106c6328415c466172bb6823132d7f6c9f6134a8a9f2fb5b9200c5ea
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 11
+  Faucet.claim confirmed   Block: 131   Gas used: 66665 (0.56%)
+
+147 168
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10851711090, 11604736094)
+User Dominat Share and Cycle Iterations are: 533666666 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 533666666 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x903324a0949cf3f40c4a72e34e171d36e6187cd404fda6442bb227a8df5d5760
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 132   Gas used: 79748 (0.66%)
+
+[7, 1]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (1701999999, 243142857)
+User Dominat Share and Cycle Iterations are: 243142857 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 243142857 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x1476a29f04cba7cf1d0524ffcac7ffdf91cefa8b288a60cbe501fec7c61dfc6e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 133   Gas used: 71381 (0.59%)
+
+[10, 7]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (3403999999, 1434542857)
+User Dominat Share and Cycle Iterations are: 170200000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 170200000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x87155dfb7c1f0d54cb6ddda0ccf37a8bed3fb4b45a54ae35c9c08ee6f311105b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 134   Gas used: 73972 (0.62%)
+
+[2, 7]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (3838857141, 2956542854)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x4103fb7b4296eb9fcdf5e5ddfaf3e12c8d9c38b9fa498acf688cc3aa0982a729
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 135   Gas used: 73972 (0.62%)
+
+[8, 9]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (5191746029, 4478542853)
+User Dominat Share and Cycle Iterations are: 169111111 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 169111111 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xa62618dcdaf1e25aeb59065f17f74345c68616b70fd700cf292556a1513c2c19
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 136   Gas used: 73972 (0.62%)
+
+[6, 7]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (6496317455, 6000542850)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xdf47a3f4c7d37674232ac849c3d9532d10d43bb7dbea0935c8e3932f3f9f01e0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 137   Gas used: 69772 (0.58%)
+
+[1, 8]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (6686567455, 7522542850)
+User Dominat Share and Cycle Iterations are: 190250000 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 190250000 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x58a55c32c7d0214db1e7371b057e7e361bbe726de288f5b6d25f859f71423ee0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 138   Gas used: 73972 (0.62%)
+
+[8, 9]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (8039456343, 9044542849)
+User Dominat Share and Cycle Iterations are: 169111111 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 169111111 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xe7e1c73088d49ede78b79dca9698665c01d54d3598af82096f5f188a3236c922
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 139   Gas used: 71381 (0.59%)
+
+[7, 1]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (9741456342, 9287685706)
+User Dominat Share and Cycle Iterations are: 243142857 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 243142857 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xb467a4550bb4a8f134da87bd100321a858a81e33001c8ea7c2ad91d0f5693ac0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 140   Gas used: 79013 (0.66%)
+
+[2, 3]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (10756123008, 10809685705)
+User Dominat Share and Cycle Iterations are: 507333333 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 507333333 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0xae91eb6a816c1631b3b9c49396b7d81c7a5f49ce2f2219e9b3561396e37b0e94
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 12
+  Faucet.demand confirmed   Block: 141   Gas used: 73972 (0.62%)
+
+[7, 7]
+Resource Reserves for Parity 0 = (1702, 1522)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (177, 35)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 66264169
+NumberOfDemands =  0 
+
+Transaction sent: 0x5ba5cd5ac4ed300cd315b5cd2b923610219899cff6982acc1234ceb40bba4683
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 142   Gas used: 109172 (0.91%)
+
+210 30
+Resource Reserves for Parity 0 = (1492, 1492)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x46b381196c6225df4e197f1ba423e194b346871da78f7365af33f19ca56593db
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 143   Gas used: 66665 (0.56%)
+
+210 147
+Resource Reserves for Parity 0 = (1282, 1345)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 170200000 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 170200000 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xd1ad74506424820c213242c132183b9712f8fc0b2d9feb01af2ce3fb77ee0c2b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 144   Gas used: 66665 (0.56%)
+
+52 182
+Resource Reserves for Parity 0 = (1230, 1163)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x527d70a9a228eaf0de83874e0268feb744bf197e7419ec0a20013252bfde7391
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 145   Gas used: 66665 (0.56%)
+
+160 180
+Resource Reserves for Parity 0 = (1070, 983)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xaed3b75c5669c7a876cede8cf613b7ec1ac44aca7cf34d9ec50ba0e801493aec
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 146   Gas used: 66665 (0.56%)
+
+156 182
+Resource Reserves for Parity 0 = (914, 801)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x4fc7251939e9759c8dfbf2c4264f50b7c1fe93f156e14b2344b9b45b7a8e5543
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 147   Gas used: 66665 (0.56%)
+
+23 184
+Resource Reserves for Parity 0 = (891, 617)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 190250000 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 190250000 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x3f7637ca432f9e6c452e2a22320e5ab0fa35786a452b5803217b759f6b22de3c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 148   Gas used: 66665 (0.56%)
+
+160 180
+Resource Reserves for Parity 0 = (731, 437)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x255ead6e4adab0135c5c05e769bf4d04db931f0b4ede26d5d6c23e93e18d955f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 149   Gas used: 66665 (0.56%)
+
+210 30
+Resource Reserves for Parity 0 = (521, 407)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x85e377509ea4d0bea0d95149669054b2a5982687a3ded5ce211f1bfc52bbbf65
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 150   Gas used: 66665 (0.56%)
+
+124 186
+Resource Reserves for Parity 0 = (397, 221)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 507333333 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 507333333 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xec38fbd5d34297761a4c4839664b91f1f4f8b22cc95091139e7adcf4b006b374
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 13
+  Faucet.claim confirmed   Block: 151   Gas used: 66665 (0.56%)
+
+182 182
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (13978524992, 13295571424)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x8e5b6a3b4bd156be1b8c0974412288ece48880f486f0c226afc215ea2c4f45d8
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 152   Gas used: 79748 (0.66%)
+
+[5, 1]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (1677000000, 335400000)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xccf7b43f61c025895b53a26e608194a815625261f4074e91b9df1f1a433bfff9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 153   Gas used: 73972 (0.62%)
+
+[8, 10]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 170200000 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (2905000000, 1870400000)
+User Dominat Share and Cycle Iterations are: 170200000 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x2b660a308d6b9f68d343fdbecd71f708dbe45f7e9d434f91d49d8c2c966d0d49
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 154   Gas used: 67181 (0.56%)
+
+[10, 2]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (4582000000, 2205800000)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xb257930c04b358035d4234c687026645166dfa21ae0bff047473cb2edaa17ceb
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 155   Gas used: 73972 (0.62%)
+
+[2, 10]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (4889000000, 3740800000)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x032e6183b5ac3a793ae4a44a2e8d83995819ffd248ac58e139aacdf54e20197e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 156   Gas used: 73972 (0.62%)
+
+[3, 8]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (5464625000, 5275800000)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x8de6617d180836914e040e90869087717b3db38a29147313d3e6c1618bae5e15
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 157   Gas used: 71381 (0.59%)
+
+[10, 3]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 190250000 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (7141625000, 5778900000)
+User Dominat Share and Cycle Iterations are: 190250000 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xffef6a75bef5ed3310b155a1db58b9c42551fcf3a8a4a54bf75eee68c651f0de
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 158   Gas used: 67181 (0.56%)
+
+[6, 5]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (8818625000, 7176400000)
+User Dominat Share and Cycle Iterations are: 169111111 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xccc69b43b10e670e8d27c7ae8204d81abf672060a1d4914d6ffb2d8ed90ac3dd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 159   Gas used: 69772 (0.58%)
+
+[1, 7]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (9037910714, 8711399998)
+User Dominat Share and Cycle Iterations are: 243142857 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x9a7bd10c605d06a16d02652a39dc6ddee542dd3924f558577f2526199cdf59a1
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 160   Gas used: 71381 (0.59%)
+
+[5, 4]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 507333333 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (10714910714, 10052999998)
+User Dominat Share and Cycle Iterations are: 507333333 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0xc53761c61120ab29a20d3d2ad6fc78821abd8251afb94e4b748ae7bc41f5b06f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 14
+  Faucet.demand confirmed   Block: 161   Gas used: 73972 (0.62%)
+
+[6, 10]
+Resource Reserves for Parity 0 = (215, 39)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1677, 1535)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 217428571 62616040
+NumberOfDemands =  0 
+
+Transaction sent: 0x0127b81d7771522a29ba599c5f9997cfc0a299093da1debe8bae2956865fc814
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 162   Gas used: 109172 (0.91%)
+
+220 44
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1457, 1491)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 243142857 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xb67f6f4d42c80ab9b3993acb8b5eb7e5b9222fcb67b77bff949e8610da1c90cf
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 163   Gas used: 66665 (0.56%)
+
+160 200
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 170200000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1297, 1291)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 170200000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xad4b19173bef36abdab14a463b03078675432b85256c3008f2cefc7d9688fbf5
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 164   Gas used: 66665 (0.56%)
+
+220 44
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1077, 1247)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xe53b1d0bb104619711de2c012cd30935fbdd23fd4ccccc0c1a93bc27722f342f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 165   Gas used: 66665 (0.56%)
+
+40 200
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1037, 1047)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 169111111 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x51ce5ba19291925e9cb60973eed38e0b06b712972c7af553e0361b2f4132c35c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 166   Gas used: 66665 (0.56%)
+
+75 200
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (962, 847)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xcfd3de53419b16c8de85c962170876db38477f5623606cf5002bfafce7ae9bca
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 167   Gas used: 66665 (0.56%)
+
+220 66
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 190250000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (742, 781)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 190250000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xf6758fe79c734b82dd8aac93aff24db87da288b6840c96a52f53ebc8e396e9c6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 168   Gas used: 66665 (0.56%)
+
+222 185
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 169111111 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (520, 596)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 169111111 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x01fcda1dd127de8bd96385b95863adb4cce11e60cd24de1463f7f29678b571bd
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 169   Gas used: 66665 (0.56%)
+
+29 203
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 243142857 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (491, 393)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 243142857 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x703ea6be2db15fe54f87a64dffc1f5c10f3e2a3f0af4a0d6769b2f5da3dee951
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 170   Gas used: 66665 (0.56%)
+
+220 176
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 507333333 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (271, 217)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 507333333 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x969786e66a9c9a0cff6a0c8333d1f28883037e1c7c8eb270b4cbe94f7463b911
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 15
+  Faucet.claim confirmed   Block: 171   Gas used: 66665 (0.56%)
+
+120 200
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (12278123005, 12331685702)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 217428571 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xd125519fd041148109c286a16bb56c9ffc0741fd12f60bcb15205184eae1ba65
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 172   Gas used: 79748 (0.66%)
+
+[8, 3]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (1715000000, 643125000)
+User Dominat Share and Cycle Iterations are: 214375000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 214375000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x6fe872c4d0a67332024a5d2aded6fd3f7b13273b9dfe830ff2a035e8b66a4a72
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 173   Gas used: 67181 (0.56%)
+
+[10, 2]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (3430000000, 986125000)
+User Dominat Share and Cycle Iterations are: 171500000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171500000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xeed9561e1161a9c4784d1238502e4da9e3454620060a6e0062f7e3a8728d4d88
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 174   Gas used: 73972 (0.62%)
+
+[8, 9]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (4798000000, 2525125000)
+User Dominat Share and Cycle Iterations are: 171000000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171000000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x402e64729832956a1b1e1956e2f41f8627ac2b286b8b1a767845a1ae39e84aed
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 175   Gas used: 79013 (0.66%)
+
+[3, 3]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (6337000000, 4064125000)
+User Dominat Share and Cycle Iterations are: 513000000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 513000000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x281a916afe4aaee3b8886d8f0ea3d73934ec9cc557e11dafaa04eba4095539a4
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 176   Gas used: 71381 (0.59%)
+
+[8, 4]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (8052000000, 4921625000)
+User Dominat Share and Cycle Iterations are: 214375000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 214375000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x655e6ac9aec133d95ae1b123eb117bad88d0617ac4e1a5bc7daeab8698d0889e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 177   Gas used: 71381 (0.59%)
+
+[6, 3]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (9766999998, 5779124999)
+User Dominat Share and Cycle Iterations are: 285833333 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 285833333 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x6c6e93e49527f5bd9c81fb24fd0db94b6b588e4e5366d8d8261af660dc9b9de8
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 178   Gas used: 71381 (0.59%)
+
+[5, 2]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (11481999998, 6465124999)
+User Dominat Share and Cycle Iterations are: 343000000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 343000000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0xf0899fc68abf3c5384146e5fb3589e8ae6572f0069d2dd6646012dad69295b01
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 179   Gas used: 79013 (0.66%)
+
+[2, 2]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (13020999998, 8004124999)
+User Dominat Share and Cycle Iterations are: 769500000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 769500000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x6e389b2d2dfb150baf97d7e35c1e79b6ca0123ca05641427a702e55b7427a51e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 180   Gas used: 73972 (0.62%)
+
+[3, 9]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (13533999998, 9543124999)
+User Dominat Share and Cycle Iterations are: 171000000 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171000000 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x339ef9a25548af0a22cb13f075fa0408142d5d9f0447757af5334cd8690c21b0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 16
+  Faucet.demand confirmed   Block: 181   Gas used: 71381 (0.59%)
+
+[6, 4]
+Resource Reserves for Parity 0 = (1715, 1539)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 44428633
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (151, 17)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 285833333 44428633
+NumberOfDemands =  0 
+
+Transaction sent: 0x7f557f8a440fd6fb39a1675eb312510979e353b6db94ad3ce42a82c30ad2b5e6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 182   Gas used: 104946 (0.87%)
+
+192 72
+Resource Reserves for Parity 0 = (1523, 1467)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x7b94e26e8326d187f2ce4892f691c92878b1135b4341f63a7ddcceab36fc991c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 183   Gas used: 66665 (0.56%)
+
+190 38
+Resource Reserves for Parity 0 = (1333, 1429)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171500000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171500000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0xf817397e86af30474d487f672419c7c2b3ba89fc6f75f45ca4396c00eca823c3
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 184   Gas used: 66665 (0.56%)
+
+152 171
+Resource Reserves for Parity 0 = (1181, 1258)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x38ce2091602b7f4ea0d1b40b20ac28f984ddc37d5740705e894b732276311a54
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 185   Gas used: 66665 (0.56%)
+
+171 171
+Resource Reserves for Parity 0 = (1010, 1087)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 513000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 513000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x827c33d87c879d2ce6c254c04b3fd9786950274af72e1c602beff73d84f969d6
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 186   Gas used: 66665 (0.56%)
+
+192 96
+Resource Reserves for Parity 0 = (818, 991)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x5ad1a7e698b6de59aa3d67ba27c6684075b5f821cdf34036033ae79dfd1cd372
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 187   Gas used: 66665 (0.56%)
+
+192 96
+Resource Reserves for Parity 0 = (626, 895)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0xaacd955deb29f0742ca888b410bfd09e9257e882b9970efabe6899746c4baba4
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 188   Gas used: 66665 (0.56%)
+
+190 76
+Resource Reserves for Parity 0 = (436, 819)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 343000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 343000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x63ff23cf97e5bbc60621685de07f377c7959752842a52a4a4970bb3ec3c658e7
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 189   Gas used: 66665 (0.56%)
+
+172 172
+Resource Reserves for Parity 0 = (264, 647)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 769500000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 769500000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x2c5d9e87b3c537323ebbcceb54938fa7c3196000fcb58b52f158f211e933ea83
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 190   Gas used: 66665 (0.56%)
+
+57 171
+Resource Reserves for Parity 0 = (207, 476)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x1f064413dd9dac88c9b4f56e23b9174e5b2c01f922f6a667284808fc241ba5c2
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 17
+  Faucet.claim confirmed   Block: 191   Gas used: 66665 (0.56%)
+
+192 128
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11635910714, 11587999998)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x4e83465193da3289f73b81bc7bb2e612aca11b5103e0d55e07b0dab91a1345f0
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 192   Gas used: 82339 (0.69%)
+
+[9, 9]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (1516999995, 1516999995)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x82bea8f8f3985c311d1691a0bf2f1f3479ba041df25e53c74bde5006f9b78841
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 193   Gas used: 76422 (0.64%)
+
+[3, 2]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171500000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (3167999994, 2617666661)
+User Dominat Share and Cycle Iterations are: 171500000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x9f9a257d048b7cec8d5a0bf716f2b4efec48b43001b86964535f9e8023ef8331
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 194   Gas used: 71381 (0.59%)
+
+[6, 1]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (4818999990, 2892833327)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0xbca63ce6b14e02fa4c4e25b4ec3a22c87b436750201e40b618fb3fdbefab8119
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 195   Gas used: 73972 (0.62%)
+
+[1, 3]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 513000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (5324666656, 4409833325)
+User Dominat Share and Cycle Iterations are: 513000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0xd10e964fed308b6499832fccfb57c60b4dc8ede49d10c85de4540a5ad3b91493
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 196   Gas used: 73972 (0.62%)
+
+[6, 7]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (6624952366, 5926833320)
+User Dominat Share and Cycle Iterations are: 214375000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0xd9793b17555679af61167a01807461ca101348b29573c4eaf2ca5ba48e6e4078
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 197   Gas used: 73972 (0.62%)
+
+[2, 8]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (7004202366, 7443833320)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x80c8a1648b84462eaee53502eb49a8cd760ae7f51f081119ccfd51a571b13da9
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 198   Gas used: 71381 (0.59%)
+
+[10, 1]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 343000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (8655202366, 7608933320)
+User Dominat Share and Cycle Iterations are: 343000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x86e5d80d9477e62673a609f61331c859fca67905a3f45b7221daab5d3e353675
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 199   Gas used: 73972 (0.62%)
+
+[7, 8]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 769500000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (9982577366, 9125933320)
+User Dominat Share and Cycle Iterations are: 769500000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x81ca5600d066cf2eb88c05b91f83ec8c285dabfb914be97cd36a65b3fcb66ea8
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 200   Gas used: 67181 (0.56%)
+
+[7, 4]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (11633577360, 10069361888)
+User Dominat Share and Cycle Iterations are: 171000000 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x6a5f6c35029020720173aa922037cabdb1b9fbadfe9fce333d00d2c14c204367
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 18
+  Faucet.demand confirmed   Block: 201   Gas used: 73972 (0.62%)
+
+[8, 8]
+Resource Reserves for Parity 0 = (15, 348)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1651, 1517)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 285833333 86542888
+NumberOfDemands =  0 
+
+Transaction sent: 0x928acf28425ba5cf8b3e19a8a7c767510a798b6102cb8dece06d0099020c393c
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 202   Gas used: 104946 (0.87%)
+
+189 189
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1462, 1328)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 214375000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0xbcfb4091d47a34085353fd4c809392d4a31952104c3ead186015021eaaf7664e
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 203   Gas used: 66665 (0.56%)
+
+207 138
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171500000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1255, 1190)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 171500000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0x7a0430614b9e3cd5f0a2b5dabe73f96aec3a613910901459f9b1e0dc97dfe19a
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 204   Gas used: 66665 (0.56%)
+
+204 34
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (1051, 1156)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 171000000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0x85d46c92c9e77bdf8812f23059688d6cd904ce2ce67351264f0e81f4110ec151
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 205   Gas used: 66665 (0.56%)
+
+63 189
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 513000000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (988, 967)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 513000000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0x93944eef8692b4722752875243cca90b76cc8088ece3acd972c7e5ca0267ea40
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 206   Gas used: 66665 (0.56%)
+
+162 189
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 214375000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (826, 778)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 214375000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0xb1191a26be1e415d83397d076d8c2862b1ca7dc1ff91fe938a7096c57a424202
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 207   Gas used: 66665 (0.56%)
+
+46 184
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (780, 594)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 285833333 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0xb438aec9aafe5689f139a1884c7864e5290bafb4095d9c605f083ca84a24465f
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 208   Gas used: 66665 (0.56%)
+
+200 20
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 343000000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (580, 574)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 343000000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0x2888ad124afa17362e5cc2b5eea0ed11092cd27ac2df57c88f6e6228e389b93d
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 209   Gas used: 66665 (0.56%)
+
+161 184
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 769500000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (419, 390)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 769500000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0x69ec1ca63336620318188b8f941ad6a3aaa2219e8a8c514c9c9cc1ba45fae88b
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 210   Gas used: 66665 (0.56%)
+
+203 116
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 171000000 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (216, 274)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 171000000 69092048
+NumberOfDemands =  0 
+
+Transaction sent: 0xaa3eed798d7e675082569f15ab7dcbc88830347aad26969844dbd545fadd5db5
+  Gas price: 0.0 gwei   Gas limit: 12000000   Nonce: 19
+  Faucet.claim confirmed   Block: 211   Gas used: 66665 (0.56%)
+
+184 184
+Resource Reserves for Parity 0 = (1515, 1848)
+Scaled Demand Sums for Parity 0 = (15248999996, 10686458331)
+User Dominat Share and Cycle Iterations are: 285833333 69092048
+NumberOfDemands =  0 
+
+Resource Reserves for Parity 1 = (32, 90)
+Scaled Demand Sums for Parity 1 = (13150577360, 11586361888)
+User Dominat Share and Cycle Iterations are: 285833333 69092048
 NumberOfDemands =  0 
 
 Terminating local RPC client...
