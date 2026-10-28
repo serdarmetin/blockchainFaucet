@@ -132,10 +132,10 @@ contract Faucet{
            capacity -= userList[registered[msg.sender]].demanded[selector];
            userList[registered[msg.sender]].demanded[selector] = 0;
 
-           if(userList[registered[msg.sender]].demandEpoch[1 - selector] == epoch)
-                totalWeight[selector] -= userList[registered[msg.sender]].totalDemanded - userList[registered[msg.sender]].demanded[1 - selector];
-            else totalWeight[selector] -= userList[registered[msg.sender]].totalDemanded;
-           
+       if (userList[registered[msg.sender]].demandEpoch[1 - selector] == epoch)
+            totalWeight[selector] -= precision / (userList[registered[msg.sender]].totalDemanded - userList[registered[msg.sender]].demanded[1 - selector]);
+       else totalWeight[selector] -= precision / userList[registered[msg.sender]].totalDemanded;
+  
         }
 
        else{
