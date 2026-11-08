@@ -54,7 +54,7 @@ contract Faucet is Heaped{
         require (msg.sender == owner, "You have to be the owner of the contract in order to call this function.");
         require (registered[_user] == 0, "The user has already been registered.");
         registered[_user] = 1;
-        userList[msg.sender].weight = _weight;
+        userList[_user].weight = _weight;
     }
     
     function updateState() public {
