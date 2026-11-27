@@ -14,6 +14,6 @@ In addition to the overall structure of AMF, which ADRF 2.2 is based on, we need
 
 [1] Ghodsi, A., Zaharia, M., Hindman, B., Konwinski, A., Shenker, S., & Stoica, I. (2011). Dominant resource fairness: Fair allocation of multiple resource types. In 8th USENIX symposium on networked systems design and implementation (NSDI 11).
 
-[2] 
+[2] Metin, S. (2025). Precomputed dominant resource fairness. arXiv preprint arXiv:2507.08846. https://arxiv.org/abs/2507.08846
 
 [3] Metin, S., & Özturan, C. (2022). Max–min fairness based faucet design for blockchains. Future Generation Computer Systems, 131, 18-27.
