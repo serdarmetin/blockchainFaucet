@@ -6,7 +6,7 @@ w=Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
 assert w.is_connected()
 accounts=w.eth.accounts
 def deploy(version):
-    src=f'AutonomousDRF_v_2.1.3_{version}.sol'
+    src=('AutonomousDRF_v_2.1.4.sol' if version=='corrected' else 'AutonomousDRF_v_2.1.3.sol')
     c=next(iter(solcx.compile_files([src],solc_version='0.5.17',optimize=True,optimize_runs=200,evm_version='istanbul').values()))
     receipt=w.eth.wait_for_transaction_receipt(w.eth.contract(abi=c['abi'],bytecode=c['bin']).constructor().transact({'from':accounts[0],'gas':12000000,'gasPrice':0}))
     assert receipt.status==1
