@@ -1,0 +1,47 @@
+name: ADRF refined scaling
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/refined.yml'
+      - 'experiments/refined.py'
+permissions:
+  contents: read
+jobs:
+  scaling:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        case: ['10 2 10','10 5 10','10 10 10','10 20 10','10 30 10','10 40 10','10 50 10','10 100 10','100 10 10','1000 10 10']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - run: pip install eth-brownie==1.21.0
+      - run: npm install -g ganache@7.9.2
+      - run: |
+          python - <<'PY'
+          import solcx.install
+          solcx.install.BINARY_DOWNLOAD_BASE = 'https://binaries.soliditylang.org/{}-amd64/{}'
+          solcx.install.install_solc('0.5.17')
+          PY
+      - run: |
+          read n m rounds <<< "${{ matrix.case }}"
+          ganache --server.port 8545 --miner.blockGasLimit 12000000 --wallet.totalAccounts "$((n+1))" --hardfork istanbul --wallet.mnemonic brownie --chain.vmErrorsOnRPCResponse false > /tmp/ganache.log 2>&1 &
+          for i in $(seq 1 120); do
+            if curl -fsS -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' http://127.0.0.1:8545; then break; fi
+            sleep 1
+          done
+          python -u experiments/refined.py "$n" "$m" "$rounds"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scaling-${{ strategy.job-index }}
+          path: results.json
