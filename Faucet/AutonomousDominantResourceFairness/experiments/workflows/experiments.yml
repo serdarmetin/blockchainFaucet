@@ -1,0 +1,43 @@
+name: ADRF functional and replay tests
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/experiments.yml'
+      - 'experiments/verify.py'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - run: pip install eth-brownie==1.21.0
+      - run: npm install -g ganache@7.9.2
+      - run: |
+          python - <<'PY'
+          import solcx.install
+          solcx.install.BINARY_DOWNLOAD_BASE = 'https://binaries.soliditylang.org/{}-amd64/{}'
+          solcx.install.install_solc('0.5.17')
+          PY
+      - run: |
+          ganache --server.port 8545 --miner.blockGasLimit 12000000 --wallet.totalAccounts 11 --hardfork istanbul --wallet.mnemonic brownie --chain.vmErrorsOnRPCResponse false > ganache.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' http://127.0.0.1:8545; then break; fi
+            sleep 1
+          done
+          python experiments/verify.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-results
+          path: |
+            results.json
+            ganache.log
